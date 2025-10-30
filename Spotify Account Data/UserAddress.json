@@ -1,0 +1,1 @@
+List(Map(city -> Knoxville, street -> 1236 Gettysvue Way, postal_code_short -> 37922, state -> TN), Map(city -> Knoxville, state -> TN, postal_code_extra -> 5978, street -> 1236 Gettysvue Way, postal_code_short -> 37922), Map(city -> Knoxville), Map(postal_code_extra -> 5978, street -> 1236 Gettysvue Way, postal_code_short -> 37922, state -> TN))

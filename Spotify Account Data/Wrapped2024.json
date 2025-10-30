@@ -1,0 +1,137 @@
+{
+  "topArtists": {
+    "numUniqueArtists": 860,
+    "topArtists": [
+      {
+        "artistUri": "spotify:artist:2RQXRUsr4IW1f3mKyKsy4B"
+      },
+      {
+        "artistUri": "spotify:artist:6s22t5Y3prQHyaHWUN1R1C"
+      },
+      {
+        "artistUri": "spotify:artist:22wbnEMDvgVIAGdFeek6ET"
+      },
+      {
+        "artistUri": "spotify:artist:0fTSzq9jAh4c36UVb4V7CB"
+      },
+      {
+        "artistUri": "spotify:artist:3ApUX1o6oSz321MMECyIYd"
+      }
+    ],
+    "topArtistMilliseconds": 109002979,
+    "topArtistFanPercentage": 0.011589752
+  },
+  "topPodcasts": {
+    "topPodcastsUri": [
+      "spotify:show:3gaGfrqgnVqUBNDdtv5p3S",
+      "spotify:show:5QaSbbv2eD4SFrlFR6IyY7",
+      "spotify:show:3LlUqzJcmpHLBazGXmS6m8"
+    ],
+    "topPodcastMilliseconds": 61599949,
+    "topPodcastPercentage": 0.0,
+    "totalPodcastMilliseconds": 126014907
+  },
+  "topTracks": {
+    "topTracks": [
+      "spotify:track:3KE6KppohrzZMbo2ao7CZ2",
+      "spotify:track:6tNQ70jh4OwmPGpYy6R2o9",
+      "spotify:track:7ByxizhA4GgEf7Sxomxhze",
+      "spotify:track:2XxpxQ1PeQhPMVikjKnmJy",
+      "spotify:track:0mflMxspEfB0VbI1kyLiAv"
+    ],
+    "topTrackPlayCount": 116,
+    "topTrackFirstPlayedDate": "2024-02-19",
+    "distinctTracksPlayed": 1458
+  },
+  "yearlyMetrics": {
+    "totalMsListened": 1172840169,
+    "mostListenedDay": "2024-03-18",
+    "mostListenedDayMinutes": 516.2683,
+    "percentGreaterThanWorldwideUsers": 81.31533
+  },
+  "musicEvolution": {
+    "eras": [
+      {
+        "key": "0",
+        "peakMonth": 2,
+        "color": "blue",
+        "genre": "happy indie",
+        "mood": "surf crush",
+        "descriptor": "beach",
+        "pivotalArtists": [
+          "spotify:artist:42FzVuyJH8YbkhzWSR2n8E",
+          "spotify:artist:22wbnEMDvgVIAGdFeek6ET",
+          "spotify:artist:0imE3buPhAowREqCrr4CYe"
+        ],
+        "tracks": [
+          {
+            "trackName": "sunburn",
+            "trackUri": "spotify:track:4gBkCqlITvat2A3aYPtMqS"
+          },
+          {
+            "trackName": "Sugar Sweet",
+            "trackUri": "spotify:track:5ZzaQW3InamKZ0KdJVQ1GO"
+          },
+          {
+            "trackName": "Gasoline",
+            "trackUri": "spotify:track:2ngNeWCODoaj7RdwQAJDna"
+          }
+        ]
+      },
+      {
+        "key": "1",
+        "peakMonth": 6,
+        "color": "yellow-green",
+        "genre": "folk pop",
+        "mood": "van life",
+        "descriptor": "slow dance",
+        "pivotalArtists": [
+          "spotify:artist:2RQXRUsr4IW1f3mKyKsy4B",
+          "spotify:artist:0fTSzq9jAh4c36UVb4V7CB",
+          "spotify:artist:3bO19AOone0ubCsfDXDtYt"
+        ],
+        "tracks": [
+          {
+            "trackName": "Before You Leave Me",
+            "trackUri": "spotify:track:2XxpxQ1PeQhPMVikjKnmJy"
+          },
+          {
+            "trackName": "Animal",
+            "trackUri": "spotify:track:00vhtWzNIISd9I04Cl3K7N"
+          },
+          {
+            "trackName": "Dial Drunk (with Post Malone)",
+            "trackUri": "spotify:track:22VHOlVYBqytsrAqV8yXBK"
+          }
+        ]
+      },
+      {
+        "key": "2",
+        "peakMonth": 10,
+        "color": "red",
+        "genre": "pop",
+        "mood": "pink pilates princess",
+        "descriptor": "strut",
+        "pivotalArtists": [
+          "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+          "spotify:artist:74KM79TiuVKeVCqs8QtB0B",
+          "spotify:artist:22wbnEMDvgVIAGdFeek6ET"
+        ],
+        "tracks": [
+          {
+            "trackName": "Beautiful Things",
+            "trackUri": "spotify:track:6tNQ70jh4OwmPGpYy6R2o9"
+          },
+          {
+            "trackName": "TEXAS HOLD 'EM",
+            "trackUri": "spotify:track:0Z7nGFVCLfixWctgePsRk9"
+          },
+          {
+            "trackName": "Burning Down",
+            "trackUri": "spotify:track:0ydx75YiFzLjjQknKFNFwt"
+          }
+        ]
+      }
+    ]
+  }
+}
