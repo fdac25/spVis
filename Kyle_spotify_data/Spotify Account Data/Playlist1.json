@@ -1,0 +1,3364 @@
+{
+  "playlists": [
+    {
+      "name": "TØP Playlist",
+      "lastModifiedDate": "2020-03-09",
+      "collaborators": [
+      ],
+      "items": [
+        {
+          "track": {
+            "trackName": "Ode to Sleep",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:773xZHHSHJvC1z3AAtWgH6"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Holding on to You",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:3C3cr2JQwXIhqAHqOardVO"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Migraine",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:4rfaoyaZvNa60cj3OKSQV9"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "House of Gold",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:36tghkPg1AO4HsAzo6YpPp"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Car Radio",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:5cbpoIu3YjoOwbBDGUEp3P"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Semi-Automatic",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:70Cp0ukCMyWeJML77NGERU"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Screen",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:1pKmfhwbZvsyYUP2eOGdw5"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "The Run and Go",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:68NsOuum1AegLDhOIr2ADL"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Fake You Out",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:3MLtopC0uho28PxZN7Zecy"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Guns for Hands",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:4RdRa3qq0GBSKjomxrkh5K"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Trees",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:1yf97yL1ll8FYXC27c9VTw"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Truce",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:6BEKt5axiNeWCr9huv0k7I"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Heavydirtysoul",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:7i9763l5SSfOnqZ35VOcfy"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Stressed Out",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:3CRDbSIZ4r5MsZ0YwxuEkn"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Ride",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:2Z8WuEywRWYTKe1NybPQEW"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Fairly Local",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:1s9xuJxhYM0LdVqksjegcg"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Tear in My Heart",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:3bnVBN67NBEzedqQuWrpP4"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Lane Boy",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:2P61EK6DMGyVyssLWS4fKy"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "The Judge",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:1lguQJjlNrIOoOylYVZN3M"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Doubt",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:57yL3161hUMuw06zzzUCHi"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Polarize",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:6GmkJJMe9U1tEcrJ3Hq3A1"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "We Don't Believe What's on TV",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:22OqansuvEMQu9W0EfiGTI"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Message Man",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:4Oyl6oYSNeeZZP0OAxPVaU"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Hometown",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:40sRwFjfrRnaTdYPJIg4CP"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Not Today",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:7qxjGHW485TL8ciwkHD5MK"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Goner",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:5P3yUXUC9rZPJPNmYGKEAz"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Implicit Demand For Proof",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:3UaFnnUo80mv431WHEzaj9"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Fall Away",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:77vDHmiANW3JS2gNN5q7pI"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "The Pantaloon",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:6QOZWUCG5vq4xtU3mW2ZA2"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Addict With A Pen",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:4bk6v5SBxNoVsbOvdOvUAJ"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Friend, Please",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:6gDTyTnFxpvQtkgGuNWGbE"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "March To the Sea",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:08ZuYMwYKdxLrGufv125m0"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Johnny Boy",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:2hUFjIbpKaRqs97OjUAmXb"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Oh Ms Believer",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:3FvV3j98xtcylQF1drDc9j"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Air Catcher",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:70oK6ePjILgOuBUzRDOfCR"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Trapdoor",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:4IN3imzEuTsiHO6tOwDQu5"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "A Car, a Torch, a Death",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:5zTX7MeCrTX5ZBFSqJS7XZ"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Taxi Cab",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:4j8gmCSLLy0TSFg2brV01g"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Before You Start Your Day",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:4izhmF4sQgGemZpLC68bC5"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Isle Of Flightless Birds",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:6cwemXIKrAQeP7TMErGwM3"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Heathens",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Heathens",
+            "trackUri": "spotify:track:6i0V12jOa3mr6uu4WYhUBr"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Cancer",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Cancer",
+            "trackUri": "spotify:track:19W5OTEcQI3ZoRW1HERMyy"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-17"
+        },
+        {
+          "track": {
+            "trackName": "Heathens (feat. MUTEMATH)",
+            "artistName": "Twenty One Pilots",
+            "albumName": "TOPxMM",
+            "trackUri": "spotify:track:5pyyN3d68eSFbwJRT0SIYO"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-01-10"
+        },
+        {
+          "track": {
+            "trackName": "Heavydirtysoul (feat. MUTEMATH)",
+            "artistName": "Twenty One Pilots",
+            "albumName": "TOPxMM",
+            "trackUri": "spotify:track:67CY1sdwFSvQQLcEajOj6C"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-01-10"
+        },
+        {
+          "track": {
+            "trackName": "Ride (feat. MUTEMATH)",
+            "artistName": "Twenty One Pilots",
+            "albumName": "TOPxMM",
+            "trackUri": "spotify:track:6lWT2iiPfzUiqFMNyFnR4b"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-01-10"
+        },
+        {
+          "track": {
+            "trackName": "Tear in My Heart (feat. MUTEMATH)",
+            "artistName": "Twenty One Pilots",
+            "albumName": "TOPxMM",
+            "trackUri": "spotify:track:5dbgfhQpLiycbirhH3dJdh"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-01-10"
+        },
+        {
+          "track": {
+            "trackName": "Lane Boy (feat. MUTEMATH)",
+            "artistName": "Twenty One Pilots",
+            "albumName": "TOPxMM",
+            "trackUri": "spotify:track:3bOfawOrDpk59qq9iuvJdw"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-01-10"
+        }
+      ],
+      "description": null,
+      "numberOfFollowers": 2
+    },
+    {
+      "name": "Assassain's Creed 4: Sea Shanties",
+      "lastModifiedDate": "2018-08-28",
+      "collaborators": [
+      ],
+      "items": [
+        {
+          "track": {
+            "trackName": "Randy Dandy Oh",
+            "artistName": "Sean Dagher",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:6Fv0O8eHNcWO1DmF0EMrRc"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Maid of Amsterdam",
+            "artistName": "Nils Brown",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:3cd7jd2Bby322dCQmG0NZv"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Leave Her Johnny",
+            "artistName": "Sean Dagher",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:2vaa0nnDnNTlxCh7fCmjsr"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Whisky Johnny O'",
+            "artistName": "Michiel Schrey",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:3OKIDbSWTV9rS8dybKP1nB"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Good Morning Ladies",
+            "artistName": "Sean Dagher",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:0OBdHjWWIKHNKV3IQzDEUB"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Fish in the Sea",
+            "artistName": "Michiel Schrey",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:4gofFADVe6CBXoNQHuxwiF"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Dead Horse",
+            "artistName": "Sean Dagher",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:7MSpEzjmxk6cTyd2Wl06IM"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Running Down to Cuba",
+            "artistName": "Michiel Schrey",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:7I5Io7uuk6kFvFe16Wm3xZ"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Trooper and the Maid",
+            "artistName": "Charlotte Cumberbirch",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:5lDnwrgB8TYpr2r5FRcaox"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "William Taylor",
+            "artistName": "Sean Dagher",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:6MNW4nosn8RT9pN88p2zDA"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Patrick Spens",
+            "artistName": "Michiel Schrey",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:459Ez4aUpfDU9Oblwk6pBU"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Fathom the Bowl",
+            "artistName": "Linda Morrison",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:2j6nNkP8mfax6y2NQHnWc7"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Admiral Benbow",
+            "artistName": "Michiel Schrey",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:03hLe0OA5UuP7VXr4VYURD"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "All for Me Grog",
+            "artistName": "Linda Morrison",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:1FQzF95qaPr0sQXIsjxDQm"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Buleria",
+            "artistName": "Marco Marin",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:2UgqTByv6hSRET2n2XzwOF"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Verdiales",
+            "artistName": "Marco Marin",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:19QuBoXBdIx5daVz5c2qRg"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Drunken Sailor",
+            "artistName": "Sean Dagher",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:0mGVZddgCy1jYBnWvKCV8H"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Lowlands Away",
+            "artistName": "Nils Brown",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:0xQulEotE4SkbS4hpi9P9X"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Padstow Farewell",
+            "artistName": "Nils Brown",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:6t3OkWkcjzGUYIXhDJSqsT"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Goodbye, Fare-ye-well",
+            "artistName": "Clayton Kennedy",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:1Z2TMOuVfmbDM17ocT3aVU"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Roll, Boys, Roll!",
+            "artistName": "Sean Dagher",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:78oB43ccLvINGO48J6E7j7"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "So Early in the Morning",
+            "artistName": "Clayton Kennedy",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:1ALIAJakVC5MnekEeSDB4e"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Where Am I to Go, M'Johnnies",
+            "artistName": "Sean Dagher",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:6MlKzxh2Vogap4MRRLDgfZ"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "'Way Me Susianah",
+            "artistName": "Nils Brown",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:1ItQi7zgOGRRrGRR7Buitc"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Billy Riley",
+            "artistName": "Nils Brown",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:1ZCIiSCc73CugkpWp7UYee"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Captain Kidd",
+            "artistName": "Nils Brown",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:7nl3rLY2J70v6WQWkfOuXf"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "The Golden Vanity",
+            "artistName": "Michiel Schrey",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:3uSCuWlQB8zoArRt0bL6At"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Blow Away the Morning Dew",
+            "artistName": "Nils Brown",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:7fJdN89C4lxZvHNtirAsFZ"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Here's a Health to the Company",
+            "artistName": "Sean Dagher",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:4JUkdidM086v5Vl2xBQYt5"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Down Among the Dead Men",
+            "artistName": "Nils Brown",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:44oHoreQPjrIUJZUpKHiVv"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Over the Hills and Far Away",
+            "artistName": "Michiel Schrey",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:3d5GDku0PGswCkGP7sLsbN"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Spanish Ladies",
+            "artistName": "Charlotte Cumberbirch",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:2SICUwCNqZcq8HUpTNPkXz"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Star of the County Down",
+            "artistName": "Sean Dagher",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:1VvrPTVRMUa1aJF2xN6VgK"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "We Be Three Poor Mariners",
+            "artistName": "Charlotte Cumberbirch",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:7D3x7V5dcJwV3zVZ70fcG6"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Captain Ward",
+            "artistName": "Linda Morrison",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:1ATzri7YBH1zUuLt9yH08J"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "The Nightingale",
+            "artistName": "Charlotte Cumberbirch",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:7cM8KzZonbtd9eYOwItqdE"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Maggie Lauder",
+            "artistName": "Linda Morrison",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:5K5nshYj8xmrSC15Dqb377"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Fandango 01",
+            "artistName": "Marcos Marin",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:2jEsSDNH7VBpgrimJUtMd3"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Fandango 02",
+            "artistName": "Marcos Marin",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:12RhVJZYvuUr5cZZXGsCpq"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Jaberas",
+            "artistName": "Marcos Marin",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:1rhWFnjefh59M37f6O0ogD"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        },
+        {
+          "track": {
+            "trackName": "Tientos",
+            "artistName": "Marcos Marin",
+            "albumName": "Assassin's Creed 4: Black Flag (Sea Shanty Edition, Vol. 2) [Original Game Soundtrack]",
+            "trackUri": "spotify:track:5CvUgmwceMk7mjXlP3h7Lu"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-03"
+        }
+      ],
+      "description": null,
+      "numberOfFollowers": 0
+    },
+    {
+      "name": "Liked from Radio",
+      "lastModifiedDate": "2018-08-28",
+      "collaborators": [
+      ],
+      "items": [
+        {
+          "track": {
+            "trackName": "Isle Of Flightless Birds",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:6cwemXIKrAQeP7TMErGwM3"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-05-25"
+        },
+        {
+          "track": {
+            "trackName": "Sleepover",
+            "artistName": "Hayley Kiyoko",
+            "albumName": "Sleepover",
+            "trackUri": "spotify:track:1ehBivYZbI2lzpb5Z8dBPS"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-05-24"
+        },
+        {
+          "track": {
+            "trackName": "Ride",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:2Z8WuEywRWYTKe1NybPQEW"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-05-24"
+        },
+        {
+          "track": {
+            "trackName": "Truthfully",
+            "artistName": "DNCE",
+            "albumName": "DNCE",
+            "trackUri": "spotify:track:2lBqyCeue1bCd6HCZtKXHu"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-05-24"
+        },
+        {
+          "track": {
+            "trackName": "Crazy = Genius",
+            "artistName": "Panic! At The Disco",
+            "albumName": "Death of a Bachelor",
+            "trackUri": "spotify:track:6V68ItawQkQlZhYIf1S86C"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-01-28"
+        },
+        {
+          "track": {
+            "trackName": "Miss Jackson (feat. LOLO)",
+            "artistName": "Panic! At The Disco",
+            "albumName": "Too Weird to Live, Too Rare to Die!",
+            "trackUri": "spotify:track:46Kcradxrva9Dny4lHU1b3"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-01-28"
+        },
+        {
+          "track": {
+            "trackName": "Sugar, We're Goin Down",
+            "artistName": "Fall Out Boy",
+            "albumName": "From Under The Cork Tree",
+            "trackUri": "spotify:track:2TfSHkHiFO4gRztVIkggkE"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-01-28"
+        },
+        {
+          "track": {
+            "trackName": "Teenagers",
+            "artistName": "My Chemical Romance",
+            "albumName": "The Black Parade",
+            "trackUri": "spotify:track:7j31rVgGX9Q2blT92VBEA0"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-01-28"
+        },
+        {
+          "track": {
+            "trackName": "Still into You",
+            "artistName": "Paramore",
+            "albumName": "Paramore",
+            "trackUri": "spotify:track:1yjY7rpaAQvKwpdUliHx0d"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-01-28"
+        },
+        {
+          "track": {
+            "trackName": "Victorious",
+            "artistName": "Panic! At The Disco",
+            "albumName": "Death of a Bachelor",
+            "trackUri": "spotify:track:6od5hFv9IT5JHc7NEF9HRv"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-01-28"
+        },
+        {
+          "track": {
+            "trackName": "Bright",
+            "artistName": "Echosmith",
+            "albumName": "Talking Dreams",
+            "trackUri": "spotify:track:3WKg25vrbjJlkhsgl2W4p3"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-30"
+        },
+        {
+          "track": {
+            "trackName": "Car Radio",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:5cbpoIu3YjoOwbBDGUEp3P"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-29"
+        },
+        {
+          "track": {
+            "trackName": "Heathens",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Heathens",
+            "trackUri": "spotify:track:6i0V12jOa3mr6uu4WYhUBr"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-28"
+        },
+        {
+          "track": {
+            "trackName": "Stressed Out",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:3CRDbSIZ4r5MsZ0YwxuEkn"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-27"
+        },
+        {
+          "track": {
+            "trackName": "Fake You Out",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:3MLtopC0uho28PxZN7Zecy"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-25"
+        },
+        {
+          "track": {
+            "trackName": "Closer",
+            "artistName": "The Chainsmokers",
+            "albumName": "Closer",
+            "trackUri": "spotify:track:7BKLCZ1jbUBVqRi2FVlTVw"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-25"
+        },
+        {
+          "track": {
+            "trackName": "Renegades",
+            "artistName": "X Ambassadors",
+            "albumName": "VHS",
+            "trackUri": "spotify:track:46GGxd8TVRt6FjUBfCavVT"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-25"
+        },
+        {
+          "track": {
+            "trackName": "Polarize",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:6GmkJJMe9U1tEcrJ3Hq3A1"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-25"
+        },
+        {
+          "track": {
+            "trackName": "Tear in My Heart",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:3bnVBN67NBEzedqQuWrpP4"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-24"
+        },
+        {
+          "track": {
+            "trackName": "Roses",
+            "artistName": "The Chainsmokers",
+            "albumName": "Roses",
+            "trackUri": "spotify:track:3vv9phIu6Y1vX3jcqaGz5Z"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-24"
+        },
+        {
+          "track": {
+            "trackName": "Doubt",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:57yL3161hUMuw06zzzUCHi"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-24"
+        },
+        {
+          "track": {
+            "trackName": "Sail",
+            "artistName": "AWOLNATION",
+            "albumName": "Megalithic Symphony Deluxe",
+            "trackUri": "spotify:track:5xhQChGGhKLWqBqX4XhtYE"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-24"
+        },
+        {
+          "track": {
+            "trackName": "Demons",
+            "artistName": "Imagine Dragons",
+            "albumName": "Night Visions",
+            "trackUri": "spotify:track:2Oehrcv4Kov0SuIgWyQY9e"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-24"
+        },
+        {
+          "track": {
+            "trackName": "HandClap",
+            "artistName": "Fitz and The Tantrums",
+            "albumName": "Fitz and The Tantrums",
+            "trackUri": "spotify:track:7j56HrjR9cGzvekvZY3Faz"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-24"
+        },
+        {
+          "track": {
+            "trackName": "Death of a Bachelor",
+            "artistName": "Panic! At The Disco",
+            "albumName": "Death of a Bachelor",
+            "trackUri": "spotify:track:1BECwm5qkaBwlbfo4kpYx8"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-24"
+        },
+        {
+          "track": {
+            "trackName": "Heavydirtysoul",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:7i9763l5SSfOnqZ35VOcfy"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-24"
+        },
+        {
+          "track": {
+            "trackName": "Outside (feat. Ellie Goulding)",
+            "artistName": "Calvin Harris",
+            "albumName": "Motion",
+            "trackUri": "spotify:track:7MmG8p0F9N3C4AXdK6o6Eb"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-23"
+        },
+        {
+          "track": {
+            "trackName": "Stole the Show",
+            "artistName": "Kygo",
+            "albumName": "Stole the Show",
+            "trackUri": "spotify:track:4iZPNYqzI2L0uwuUKun7Aa"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-23"
+        },
+        {
+          "track": {
+            "trackName": "Lean On (feat. MØ & DJ Snake)",
+            "artistName": "Major Lazer",
+            "albumName": "Peace Is The Mission",
+            "trackUri": "spotify:track:4vS8VaBwJJV5Ry7UFIQuoo"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-23"
+        },
+        {
+          "track": {
+            "trackName": "Summer",
+            "artistName": "Calvin Harris",
+            "albumName": "Motion",
+            "trackUri": "spotify:track:6YUTL4dYpB9xZO5qExPf05"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-23"
+        },
+        {
+          "track": {
+            "trackName": "Outside (feat. Ellie Goulding)",
+            "artistName": "Calvin Harris",
+            "albumName": "Motion",
+            "trackUri": "spotify:track:7MmG8p0F9N3C4AXdK6o6Eb"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-28"
+        },
+        {
+          "track": {
+            "trackName": "Uma Thurman",
+            "artistName": "Fall Out Boy",
+            "albumName": "American Beauty/American Psycho",
+            "trackUri": "spotify:track:5PUawWFG1oIS2NwEcyHaCr"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-16"
+        },
+        {
+          "track": {
+            "trackName": "Girls / Girls / Boys",
+            "artistName": "Panic! At The Disco",
+            "albumName": "Too Weird to Live, Too Rare to Die!",
+            "trackUri": "spotify:track:2wEjPgOCEczmjlvq60LyQi"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-16"
+        },
+        {
+          "track": {
+            "trackName": "Hey There Delilah",
+            "artistName": "Plain White T's",
+            "albumName": "Every Second Counts",
+            "trackUri": "spotify:track:0xM88xobymkMgg46MStfnV"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-16"
+        },
+        {
+          "track": {
+            "trackName": "Helena",
+            "artistName": "My Chemical Romance",
+            "albumName": "Three Cheers for Sweet Revenge",
+            "trackUri": "spotify:track:5dTHtzHFPyi8TlTtzoz1J9"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-08-06"
+        },
+        {
+          "track": {
+            "trackName": "Teenagers",
+            "artistName": "My Chemical Romance",
+            "albumName": "The Black Parade",
+            "trackUri": "spotify:track:7j31rVgGX9Q2blT92VBEA0"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-08-06"
+        },
+        {
+          "track": {
+            "trackName": "My Songs Know What You Did In The Dark (Light Em Up)",
+            "artistName": "Fall Out Boy",
+            "albumName": "Save Rock And Roll",
+            "trackUri": "spotify:track:7s0lDK7y3XLmI7tcsRAbW0"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-08-06"
+        },
+        {
+          "track": {
+            "trackName": "Dance, Dance",
+            "artistName": "Fall Out Boy",
+            "albumName": "From Under The Cork Tree",
+            "trackUri": "spotify:track:0a7BloCiNzLDD9qSQHh5m7"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-08-06"
+        }
+      ],
+      "description": null,
+      "numberOfFollowers": 0
+    },
+    {
+      "name": "Rock And Roll ",
+      "lastModifiedDate": "2018-08-28",
+      "collaborators": [
+      ],
+      "items": [
+        {
+          "track": {
+            "trackName": "Rock And Roll All Nite",
+            "artistName": "KISS",
+            "albumName": "Dressed To Kill",
+            "trackUri": "spotify:track:6KTv0Z8BmVqM7DPxbGzpVC"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Detroit Rock City",
+            "artistName": "KISS",
+            "albumName": "Smashes Thrashes & Hits",
+            "trackUri": "spotify:track:3uz0O62HqYoyRiWZjS61KK"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Sweet Child O' Mine",
+            "artistName": "Guns N' Roses",
+            "albumName": "Appetite For Destruction",
+            "trackUri": "spotify:track:4MhTFsyqIJnjsOweVcU8ug"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Welcome To The Jungle",
+            "artistName": "Guns N' Roses",
+            "albumName": "Appetite For Destruction",
+            "trackUri": "spotify:track:5NIPsWpDjJTFBoPxCUUeXp"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "You Give Love A Bad Name",
+            "artistName": "Bon Jovi",
+            "albumName": "Slippery When Wet",
+            "trackUri": "spotify:track:3KYiA4vq6RPO1dE2XROXd8"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Livin' On A Prayer",
+            "artistName": "Bon Jovi",
+            "albumName": "Slippery When Wet",
+            "trackUri": "spotify:track:0J6mQxEZnlRt9ymzFntA6z"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Wanted Dead Or Alive",
+            "artistName": "Bon Jovi",
+            "albumName": "Slippery When Wet",
+            "trackUri": "spotify:track:2fY6tqgrlrg1ky9fgs0t5u"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Walk This Way",
+            "artistName": "Aerosmith",
+            "albumName": "Toys In The Attic",
+            "trackUri": "spotify:track:5SZ6zX4rOrEQferfFC2MfP"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Every Rose Has Its Thorn - 2003 Remaster",
+            "artistName": "Poison",
+            "albumName": "Open Up And Say...Ahh!",
+            "trackUri": "spotify:track:43GS3mtezoIFiuIZCLLiDY"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Rock And Roll All Nite - 2006 - Remaster",
+            "artistName": "Poison",
+            "albumName": "Poison'd!",
+            "trackUri": "spotify:track:1RDqW6wsJ3Kpn3GaNwUxvE"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "T.N.T.",
+            "artistName": "AC/DC",
+            "albumName": "High Voltage",
+            "trackUri": "spotify:track:7LRMbd3LEoV5wZJvXT1Lwb"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Thunderstruck",
+            "artistName": "AC/DC",
+            "albumName": "The Razors Edge",
+            "trackUri": "spotify:track:57bgtoPSgt236HzfBOd8kj"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Back In Black",
+            "artistName": "AC/DC",
+            "albumName": "Back In Black",
+            "trackUri": "spotify:track:08mG3Y1vljYA6bvDt4Wqkj"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Highway to Hell",
+            "artistName": "AC/DC",
+            "albumName": "Highway to Hell",
+            "trackUri": "spotify:track:2zYzyRzz6pRmhPzyfMEC8s"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "You Shook Me All Night Long",
+            "artistName": "AC/DC",
+            "albumName": "Who Made Who",
+            "trackUri": "spotify:track:6yl8Es1tCYD9WdSkeVLFw4"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Bohemian Rhapsody - Remastered 2011",
+            "artistName": "Queen",
+            "albumName": "A Night At The Opera",
+            "trackUri": "spotify:track:7tFiyTwD0nx5a1eklYtX2J"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "No Sleep Till Brooklyn",
+            "artistName": "Beastie Boys",
+            "albumName": "Licensed To Ill",
+            "trackUri": "spotify:track:5qxChyzKLEyoPJ5qGrdurN"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Cherry Pie",
+            "artistName": "Warrant",
+            "albumName": "Cherry Pie",
+            "trackUri": "spotify:track:7LygtNjQ65PSdzVjUnHXQb"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "It's a Long Way to the Top (If You Wanna Rock 'N' Roll)",
+            "artistName": "AC/DC",
+            "albumName": "High Voltage",
+            "trackUri": "spotify:track:7nemcVsXVFZF01iqpIIo2Y"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Don't Stop Believin'",
+            "artistName": "Journey",
+            "albumName": "Escape",
+            "trackUri": "spotify:track:4bHsxqR3GMrXTxEPLuK5ue"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Slow Ride",
+            "artistName": "Foghat",
+            "albumName": "Fool for the City",
+            "trackUri": "spotify:track:5aYVqxyetmT5OYmvZCA90X"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-23"
+        },
+        {
+          "track": {
+            "trackName": "I Love Rock 'n' Roll",
+            "artistName": "The Black Jets",
+            "albumName": "ReCovered Hits Volume 2",
+            "trackUri": "spotify:track:0p20xyAdYkaxAPWdXr0sir"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-12-12"
+        }
+      ],
+      "description": null,
+      "numberOfFollowers": 0
+    },
+    {
+      "name": "Discovered by Musixmatch",
+      "lastModifiedDate": "2018-08-28",
+      "collaborators": [
+      ],
+      "items": [
+        {
+          "track": {
+            "trackName": "Bennie And The Jets",
+            "artistName": "Elton John",
+            "albumName": "Goodbye Yellow Brick Road",
+            "trackUri": "spotify:track:3c1t3AGtVLtM1VfdLFNkxs"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-09-04"
+        },
+        {
+          "track": {
+            "trackName": "Murder Song (5, 4, 3, 2, 1)",
+            "artistName": "AURORA",
+            "albumName": "Murder Song (5, 4, 3, 2, 1)",
+            "trackUri": "spotify:track:0fC7mSBhDXIuyT4qyNdT9e"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-08-31"
+        },
+        {
+          "track": {
+            "trackName": "No Scrubs",
+            "artistName": "TLC",
+            "albumName": "110% POP - 110 Hits Fra 80'erne Til Lige Nu (Vol. 2)",
+            "trackUri": "spotify:track:3VZobiArdZ3rQFFARSqtNr"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Don't Stop Me Now",
+            "artistName": "Queen",
+            "albumName": "Jazz",
+            "trackUri": "spotify:track:43DHLzDkncpby82Po5jlOZ"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-06-28"
+        },
+        {
+          "track": {
+            "trackName": "Take on Me - 2016 Remaster",
+            "artistName": "a-ha",
+            "albumName": "Time and Again: The Ultimate a-ha",
+            "trackUri": "spotify:track:7CO5PoqewhenbV3RpifBAC"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-06-28"
+        },
+        {
+          "track": {
+            "trackName": "Other Girl",
+            "artistName": "Morgan Page",
+            "albumName": "Other Girl",
+            "trackUri": "spotify:track:1a1dVbtGgUHheYO9bc6CgD"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-06-25"
+        },
+        {
+          "track": {
+            "trackName": "Dancing In the Dark",
+            "artistName": "Bruce Springsteen",
+            "albumName": "Greatest Hits",
+            "trackUri": "spotify:track:7aUWIzajvASehXEeSfHAC1"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-06-23"
+        },
+        {
+          "track": {
+            "trackName": "Isle Of Flightless Birds",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:6cwemXIKrAQeP7TMErGwM3"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-06-13"
+        },
+        {
+          "track": {
+            "trackName": "Stay",
+            "artistName": "Zedd",
+            "albumName": "NOW That's What I Call Music! 96",
+            "trackUri": "spotify:track:3IvQxjrbhUaqOc1BZwb6Iz"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-06-07"
+        },
+        {
+          "track": {
+            "trackName": "Undone - The Sweater Song",
+            "artistName": "Weezer",
+            "albumName": "Jaar Van De Gitaar",
+            "trackUri": "spotify:track:1BVbQYoWGC7PVzukSWpKnE"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-05-21"
+        },
+        {
+          "track": {
+            "trackName": "Amber",
+            "artistName": "311",
+            "albumName": "From Chaos",
+            "trackUri": "spotify:track:6Fe3Flc9SjE03pqwD6PVQl"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-05-21"
+        },
+        {
+          "track": {
+            "trackName": "Guitarist On the Rock",
+            "artistName": "Jazzy Fusion",
+            "albumName": "Peace of Sense",
+            "trackUri": "spotify:track:3CeweQ3YzUuMUvd7uf62m9"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-05-21"
+        },
+        {
+          "track": {
+            "trackName": "Hard Times",
+            "artistName": "Paramore",
+            "albumName": "After Laughter",
+            "trackUri": "spotify:track:0w5Bdu51Ka25Pf3hojsKHh"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-05-21"
+        },
+        {
+          "track": {
+            "trackName": "Heavydirtysoul",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:7i9763l5SSfOnqZ35VOcfy"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-03-01"
+        },
+        {
+          "track": {
+            "trackName": "The Run and Go",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:68NsOuum1AegLDhOIr2ADL"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-03-01"
+        },
+        {
+          "track": {
+            "trackName": "Guns For Hands",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Regional At Best",
+            "trackUri": "spotify:track:5TSYKvgjxqZwyip5VgDGRL"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-03-01"
+        },
+        {
+          "track": {
+            "trackName": "Addict With A Pen",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:4bk6v5SBxNoVsbOvdOvUAJ"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-03-01"
+        },
+        {
+          "track": {
+            "trackName": "如果有如果",
+            "artistName": "鄧福如 AFÜ",
+            "albumName": "原來如此",
+            "trackUri": "spotify:track:04m3HEBXDoymKXT1az6gXa"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-03-01"
+        },
+        {
+          "track": {
+            "trackName": "Trees",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Regional At Best",
+            "trackUri": "spotify:track:1jgtUep3ENhXbOnl61fx5i"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-03-01"
+        },
+        {
+          "track": {
+            "trackName": "Hometown",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:40sRwFjfrRnaTdYPJIg4CP"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-03-01"
+        },
+        {
+          "track": {
+            "trackName": "Fall Away",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:77vDHmiANW3JS2gNN5q7pI"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-03-01"
+        },
+        {
+          "track": {
+            "trackName": "Fairly Local",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:1s9xuJxhYM0LdVqksjegcg"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-03-01"
+        },
+        {
+          "track": {
+            "trackName": "Car Radio",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Regional At Best",
+            "trackUri": "spotify:track:0r1Lwr0yomY8ORHAp3PIGT"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-03-01"
+        },
+        {
+          "track": {
+            "trackName": "March To the Sea",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:08ZuYMwYKdxLrGufv125m0"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-03-01"
+        },
+        {
+          "track": {
+            "trackName": "Taxi Cab",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:4j8gmCSLLy0TSFg2brV01g"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-03-01"
+        },
+        {
+          "track": {
+            "trackName": "Taxi Cab",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:4j8gmCSLLy0TSFg2brV01g"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-03-01"
+        },
+        {
+          "track": {
+            "trackName": "Heathens",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Heathens",
+            "trackUri": "spotify:track:6i0V12jOa3mr6uu4WYhUBr"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-03-01"
+        },
+        {
+          "track": {
+            "trackName": "Tear in My Heart",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:3bnVBN67NBEzedqQuWrpP4"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-03-01"
+        },
+        {
+          "track": {
+            "trackName": "Message Man",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:4Oyl6oYSNeeZZP0OAxPVaU"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-03-01"
+        },
+        {
+          "track": {
+            "trackName": "Message Man",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:4Oyl6oYSNeeZZP0OAxPVaU"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-03-01"
+        },
+        {
+          "track": {
+            "trackName": "Message Man",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:4Oyl6oYSNeeZZP0OAxPVaU"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2017-03-01"
+        },
+        {
+          "track": {
+            "trackName": "Gold",
+            "artistName": "Kiiara",
+            "albumName": "Gold",
+            "trackUri": "spotify:track:6WhzFzROw3aq3rPWjgYlxr"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-08-27"
+        },
+        {
+          "track": {
+            "trackName": "Demons",
+            "artistName": "Imagine Dragons",
+            "albumName": "Night Visions",
+            "trackUri": "spotify:track:5qaEfEh1AtSdrdrByCP7qR"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-08-18"
+        },
+        {
+          "track": {
+            "trackName": "Demons",
+            "artistName": "Imagine Dragons",
+            "albumName": "Night Visions",
+            "trackUri": "spotify:track:5qaEfEh1AtSdrdrByCP7qR"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-08-18"
+        },
+        {
+          "track": {
+            "trackName": "Good Help (Is So Hard to Find)",
+            "artistName": "Death Cab for Cutie",
+            "albumName": "Kintsugi",
+            "trackUri": "spotify:track:7C1p70Zs3pBZEQGeWMF8sS"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-23"
+        },
+        {
+          "track": {
+            "trackName": "Born On The Bayou",
+            "artistName": "Creedence Clearwater Revival",
+            "albumName": "Bayou Country",
+            "trackUri": "spotify:track:1nE78lQ7ix7XNrjuzTE4Jz"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Lights",
+            "artistName": "Journey",
+            "albumName": "The Essential Journey",
+            "trackUri": "spotify:track:3R47BVunpwXhQbLWrClD94"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Levon",
+            "artistName": "Elton John",
+            "albumName": "Madman Across The Water",
+            "trackUri": "spotify:track:0aJfFLl0grcQS7euiIp0ni"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Money",
+            "artistName": "Pink Floyd",
+            "albumName": "The Dark Side of the Moon",
+            "trackUri": "spotify:track:0vFOzaXqZHahrZp6enQwQb"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "It's a Long Way to the Top (If You Wanna Rock 'N' Roll)",
+            "artistName": "AC/DC",
+            "albumName": "High Voltage",
+            "trackUri": "spotify:track:7nemcVsXVFZF01iqpIIo2Y"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "A Long December",
+            "artistName": "Counting Crows",
+            "albumName": "Films About Ghosts: The Best Of...",
+            "trackUri": "spotify:track:082dIpm6D77hIhzhmrqX2U"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Street Fighting Man",
+            "artistName": "The Rolling Stones",
+            "albumName": "Beggars Banquet",
+            "trackUri": "spotify:track:09t1lDivsjZffcTC7rNa2m"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "It's Alright For You",
+            "artistName": "The Police",
+            "albumName": "Reggatta De Blanc",
+            "trackUri": "spotify:track:3HYlobRFJeCILm593KDa9R"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Let's Go - Stefan Dabruck Remix",
+            "artistName": "Matt and Kim",
+            "albumName": "Love / Sexo",
+            "trackUri": "spotify:track:36dUc86b4lw5VJPivr9frr"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Out of My League",
+            "artistName": "Fitz and The Tantrums",
+            "albumName": "More Than Just a Dream",
+            "trackUri": "spotify:track:2Z5wXgysowvzl0nKGNGU0t"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Harlem",
+            "artistName": "New Politics",
+            "albumName": "A Bad Girl In Harlem",
+            "trackUri": "spotify:track:2vnghLAJ4wBAkQX9MK1GY5"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        }
+      ],
+      "description": null,
+      "numberOfFollowers": 0
+    },
+    {
+      "name": "Personal Playlist",
+      "lastModifiedDate": "2018-08-28",
+      "collaborators": [
+      ],
+      "items": [
+        {
+          "track": {
+            "trackName": "Ode to Sleep",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:773xZHHSHJvC1z3AAtWgH6"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "Holding on to You",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:3C3cr2JQwXIhqAHqOardVO"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "Migraine",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:4rfaoyaZvNa60cj3OKSQV9"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "House of Gold",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:36tghkPg1AO4HsAzo6YpPp"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "Car Radio",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:5cbpoIu3YjoOwbBDGUEp3P"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "Semi-Automatic",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:70Cp0ukCMyWeJML77NGERU"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "Screen",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:1pKmfhwbZvsyYUP2eOGdw5"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "The Run and Go",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:68NsOuum1AegLDhOIr2ADL"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "Fake You Out",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:3MLtopC0uho28PxZN7Zecy"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "Guns for Hands",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:4RdRa3qq0GBSKjomxrkh5K"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "Trees",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:1yf97yL1ll8FYXC27c9VTw"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "Truce",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Vessel",
+            "trackUri": "spotify:track:6BEKt5axiNeWCr9huv0k7I"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "Heavydirtysoul",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:7i9763l5SSfOnqZ35VOcfy"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "Stressed Out",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:3CRDbSIZ4r5MsZ0YwxuEkn"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "Ride",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:2Z8WuEywRWYTKe1NybPQEW"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "Fairly Local",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:1s9xuJxhYM0LdVqksjegcg"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "Tear in My Heart",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:3bnVBN67NBEzedqQuWrpP4"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "Lane Boy",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:2P61EK6DMGyVyssLWS4fKy"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "The Judge",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:1lguQJjlNrIOoOylYVZN3M"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "Doubt",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:57yL3161hUMuw06zzzUCHi"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "Polarize",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:6GmkJJMe9U1tEcrJ3Hq3A1"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "We Don't Believe What's on TV",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:22OqansuvEMQu9W0EfiGTI"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "Message Man",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:4Oyl6oYSNeeZZP0OAxPVaU"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "Hometown",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:40sRwFjfrRnaTdYPJIg4CP"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "Not Today",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:7qxjGHW485TL8ciwkHD5MK"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "Goner",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Blurryface",
+            "trackUri": "spotify:track:5P3yUXUC9rZPJPNmYGKEAz"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-04-29"
+        },
+        {
+          "track": {
+            "trackName": "Boulevard of Broken Dreams (feat. John Gallagher Jr., Rebecca Naomi Jones, Stark Sands, The American Idiot Broadway Company)",
+            "artistName": "Green Day",
+            "albumName": "American Idiot - The Original Broadway Cast Recording",
+            "trackUri": "spotify:track:41pFyxOpS119Pb8JEzhx0w"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-06-17"
+        },
+        {
+          "track": {
+            "trackName": "Take Me to Church",
+            "artistName": "Hozier",
+            "albumName": "Hozier",
+            "trackUri": "spotify:track:0aOluBqXYd0rFSCsgDyAWX"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-06-17"
+        },
+        {
+          "track": {
+            "trackName": "Heathens",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Heathens",
+            "trackUri": "spotify:track:6i0V12jOa3mr6uu4WYhUBr"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-06-17"
+        },
+        {
+          "track": {
+            "trackName": "Space Enough To Grow",
+            "artistName": "Of Mice & Men",
+            "albumName": "Restoring Force",
+            "trackUri": "spotify:track:3OU4ztDdQFFjGIIfKnF7YF"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-15"
+        },
+        {
+          "track": {
+            "trackName": "When You Can't Sleep At Night",
+            "artistName": "Of Mice & Men",
+            "albumName": "The Flood (Deluxe Reissue)",
+            "trackUri": "spotify:track:42i1pGtSyPVXNX71oW8dyg"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-15"
+        },
+        {
+          "track": {
+            "trackName": "Renegades",
+            "artistName": "X Ambassadors",
+            "albumName": "VHS",
+            "trackUri": "spotify:track:0fYVliAYKHuPmECRs1pbRf"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-15"
+        },
+        {
+          "track": {
+            "trackName": "Unsteady",
+            "artistName": "X Ambassadors",
+            "albumName": "VHS 2.0",
+            "trackUri": "spotify:track:7uyrODYr6WNhaGXfBmhdu6"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-15"
+        },
+        {
+          "track": {
+            "trackName": "Demons",
+            "artistName": "Imagine Dragons",
+            "albumName": "Night Visions",
+            "trackUri": "spotify:track:3LlAyCYU26dvFZBDUIMb7a"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-15"
+        },
+        {
+          "track": {
+            "trackName": "Radioactive",
+            "artistName": "Imagine Dragons",
+            "albumName": "Night Visions",
+            "trackUri": "spotify:track:4G8gkOterJn0Ywt6uhqbhp"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-15"
+        },
+        {
+          "track": {
+            "trackName": "It's Time",
+            "artistName": "Imagine Dragons",
+            "albumName": "Night Visions",
+            "trackUri": "spotify:track:7pUYFGnZwLa7I3UmDypJGy"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-15"
+        },
+        {
+          "track": {
+            "trackName": "Tiptoe",
+            "artistName": "Imagine Dragons",
+            "albumName": "Night Visions",
+            "trackUri": "spotify:track:5PCdkbHYacEdWbZRRPopmM"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-15"
+        },
+        {
+          "track": {
+            "trackName": "Nothing Left To Say / Rocks",
+            "artistName": "Imagine Dragons",
+            "albumName": "Night Visions",
+            "trackUri": "spotify:track:16hsoq7933Mb069YTs2XYX"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-15"
+        },
+        {
+          "track": {
+            "trackName": "Irresistible",
+            "artistName": "Fall Out Boy",
+            "albumName": "Irresistible",
+            "trackUri": "spotify:track:3Y3gChJoEUTqrtuqJCIPQk"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-15"
+        },
+        {
+          "track": {
+            "trackName": "Uma Thurman",
+            "artistName": "Fall Out Boy",
+            "albumName": "American Beauty/American Psycho",
+            "trackUri": "spotify:track:5PUawWFG1oIS2NwEcyHaCr"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-21"
+        },
+        {
+          "track": {
+            "trackName": "Centuries",
+            "artistName": "Fall Out Boy",
+            "albumName": "American Beauty/American Psycho",
+            "trackUri": "spotify:track:04aAxqtGp5pv12UXAg4pkq"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Sucker for Pain (with Wiz Khalifa, Imagine Dragons, Logic & Ty Dolla $ign feat. X Ambassadors)",
+            "artistName": "Lil Wayne",
+            "albumName": "Sucker for Pain (with Logic & Ty Dolla $ign feat. X Ambassadors)",
+            "trackUri": "spotify:track:4dASQiO1Eoo3RJvt74FtXB"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-07-22"
+        },
+        {
+          "track": {
+            "trackName": "Circles",
+            "artistName": "Pierce The Veil",
+            "albumName": "Circles",
+            "trackUri": "spotify:track:4SuCTy2La3F6oKCAR2lL9P"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-08-04"
+        },
+        {
+          "track": {
+            "trackName": "Teenagers",
+            "artistName": "My Chemical Romance",
+            "albumName": "The Black Parade",
+            "trackUri": "spotify:track:7j31rVgGX9Q2blT92VBEA0"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-08-07"
+        },
+        {
+          "track": {
+            "trackName": "Welcome to the Black Parade",
+            "artistName": "My Chemical Romance",
+            "albumName": "The Black Parade",
+            "trackUri": "spotify:track:5wQnmLuC1W7ATsArWACrgW"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-08-17"
+        },
+        {
+          "track": {
+            "trackName": "Dive In",
+            "artistName": "Pierce The Veil",
+            "albumName": "Misadventures",
+            "trackUri": "spotify:track:54s1QSqH1saQCIqmmL3oQH"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-08-17"
+        },
+        {
+          "track": {
+            "trackName": "Real",
+            "artistName": "Of Mice & Men",
+            "albumName": "Real",
+            "trackUri": "spotify:track:3NptglYQWQaFZ7mvmBqyJG"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-08-27"
+        },
+        {
+          "track": {
+            "trackName": "2 Chord",
+            "artistName": "Sleeping With Sirens",
+            "albumName": "Madness",
+            "trackUri": "spotify:track:2KLXrOswYq81rkWPnzv2dw"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-08-27"
+        },
+        {
+          "track": {
+            "trackName": "American Beauty/American Psycho",
+            "artistName": "Fall Out Boy",
+            "albumName": "American Beauty/American Psycho",
+            "trackUri": "spotify:track:3D4Xkcir5YEhk8Xidkd1dL"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-08-27"
+        },
+        {
+          "track": {
+            "trackName": "My Songs Know What You Did In The Dark (Light Em Up)",
+            "artistName": "Fall Out Boy",
+            "albumName": "Save Rock And Roll",
+            "trackUri": "spotify:track:7s0lDK7y3XLmI7tcsRAbW0"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-08-27"
+        },
+        {
+          "track": {
+            "trackName": "Kids In The Dark",
+            "artistName": "All Time Low",
+            "albumName": "Future Hearts",
+            "trackUri": "spotify:track:15IYFI3Mm58gOH7dLmKI3w"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-08-27"
+        },
+        {
+          "track": {
+            "trackName": "Cancer",
+            "artistName": "My Chemical Romance",
+            "albumName": "The Black Parade",
+            "trackUri": "spotify:track:0GgN4MhR5GKn5IcKN0e0rG"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-09-02"
+        },
+        {
+          "track": {
+            "trackName": "Immortals",
+            "artistName": "Fall Out Boy",
+            "albumName": "American Beauty/American Psycho",
+            "trackUri": "spotify:track:3Te8uLyit6X3ncNW8Fp3K2"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-09-05"
+        },
+        {
+          "track": {
+            "trackName": "Floral & Fading",
+            "artistName": "Pierce The Veil",
+            "albumName": "Misadventures",
+            "trackUri": "spotify:track:5y0F0wAVZTNZSpBJWiZkjf"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-09-05"
+        },
+        {
+          "track": {
+            "trackName": "Hard To Follow",
+            "artistName": "Chris Leese",
+            "albumName": "White Noise",
+            "trackUri": "spotify:track:1oF809KCO318cSkB7XLSLR"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-13"
+        },
+        {
+          "track": {
+            "trackName": "Texas Is Forever",
+            "artistName": "Pierce The Veil",
+            "albumName": "Misadventures",
+            "trackUri": "spotify:track:35LkQ0BGQhao82dmWoDFwx"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-13"
+        },
+        {
+          "track": {
+            "trackName": "The Divine Zero",
+            "artistName": "Pierce The Veil",
+            "albumName": "Misadventures",
+            "trackUri": "spotify:track:1VY823dFzI9L8BEf2X7B5I"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-13"
+        },
+        {
+          "track": {
+            "trackName": "Phantom Power and Ludicrous Speed",
+            "artistName": "Pierce The Veil",
+            "albumName": "Misadventures",
+            "trackUri": "spotify:track:11BxlJY3ek3feYJy78Zdtc"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-13"
+        },
+        {
+          "track": {
+            "trackName": "Circles",
+            "artistName": "Pierce The Veil",
+            "albumName": "Misadventures",
+            "trackUri": "spotify:track:46DpmRCYgAFsORaHy7F5hp"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-13"
+        },
+        {
+          "track": {
+            "trackName": "Today I Saw the Whole World",
+            "artistName": "Pierce The Veil",
+            "albumName": "Misadventures",
+            "trackUri": "spotify:track:63MXA3ZHqnmWUs6sdzk3ok"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-13"
+        },
+        {
+          "track": {
+            "trackName": "Gold Medal Ribbon",
+            "artistName": "Pierce The Veil",
+            "albumName": "Misadventures",
+            "trackUri": "spotify:track:3Vx5EMx2hGxTKxJa30zHz5"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-13"
+        },
+        {
+          "track": {
+            "trackName": "Bedless",
+            "artistName": "Pierce The Veil",
+            "albumName": "Misadventures",
+            "trackUri": "spotify:track:5WweXBOLZIbkYE5bjoduTM"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-13"
+        },
+        {
+          "track": {
+            "trackName": "Sambuka",
+            "artistName": "Pierce The Veil",
+            "albumName": "Misadventures",
+            "trackUri": "spotify:track:0IIunpuaoQJYrOLJ38oJsw"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-13"
+        },
+        {
+          "track": {
+            "trackName": "Song for Isabelle",
+            "artistName": "Pierce The Veil",
+            "albumName": "Misadventures",
+            "trackUri": "spotify:track:2PxtbpxY9KMlsiZT2jN817"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-13"
+        },
+        {
+          "track": {
+            "trackName": "Bohemian Rhapsody",
+            "artistName": "Panic! At The Disco",
+            "albumName": "Suicide Squad: The Album",
+            "trackUri": "spotify:track:2YSbHu9XF4bNYWt3MnIhgE"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-16"
+        },
+        {
+          "track": {
+            "trackName": "Victorious - RAC Mix",
+            "artistName": "Panic! At The Disco",
+            "albumName": "Victorious",
+            "trackUri": "spotify:track:2ShSP9Ix7yg6sECSY14hw7"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-10-16"
+        },
+        {
+          "track": {
+            "trackName": "Cancer",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Cancer",
+            "trackUri": "spotify:track:19W5OTEcQI3ZoRW1HERMyy"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-06"
+        },
+        {
+          "track": {
+            "trackName": "Implicit Demand For Proof",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:3UaFnnUo80mv431WHEzaj9"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-20"
+        },
+        {
+          "track": {
+            "trackName": "Fall Away",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:77vDHmiANW3JS2gNN5q7pI"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-20"
+        },
+        {
+          "track": {
+            "trackName": "The Pantaloon",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:6QOZWUCG5vq4xtU3mW2ZA2"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-20"
+        },
+        {
+          "track": {
+            "trackName": "Addict With A Pen",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:4bk6v5SBxNoVsbOvdOvUAJ"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-20"
+        },
+        {
+          "track": {
+            "trackName": "Friend, Please",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:6gDTyTnFxpvQtkgGuNWGbE"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-20"
+        },
+        {
+          "track": {
+            "trackName": "March To the Sea",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:08ZuYMwYKdxLrGufv125m0"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-20"
+        },
+        {
+          "track": {
+            "trackName": "Johnny Boy",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:2hUFjIbpKaRqs97OjUAmXb"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-20"
+        },
+        {
+          "track": {
+            "trackName": "Oh Ms Believer",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:3FvV3j98xtcylQF1drDc9j"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-20"
+        },
+        {
+          "track": {
+            "trackName": "Air Catcher",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:70oK6ePjILgOuBUzRDOfCR"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-20"
+        },
+        {
+          "track": {
+            "trackName": "Trapdoor",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:4IN3imzEuTsiHO6tOwDQu5"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-20"
+        },
+        {
+          "track": {
+            "trackName": "A Car, a Torch, a Death",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:5zTX7MeCrTX5ZBFSqJS7XZ"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-20"
+        },
+        {
+          "track": {
+            "trackName": "Taxi Cab",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:4j8gmCSLLy0TSFg2brV01g"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-20"
+        },
+        {
+          "track": {
+            "trackName": "Before You Start Your Day",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:4izhmF4sQgGemZpLC68bC5"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-20"
+        },
+        {
+          "track": {
+            "trackName": "Isle Of Flightless Birds",
+            "artistName": "Twenty One Pilots",
+            "albumName": "Twenty One Pilots",
+            "trackUri": "spotify:track:6cwemXIKrAQeP7TMErGwM3"
+          },
+          "episode": null,
+          "audiobook": null,
+          "localTrack": null,
+          "addedDate": "2016-11-20"
+        }
+      ],
+      "description": null,
+      "numberOfFollowers": 0
+    }
+  ]
+}
