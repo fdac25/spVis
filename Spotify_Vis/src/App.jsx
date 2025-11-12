@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -24,11 +22,11 @@ function App() {
 
     setSelectedFiles(jsonFiles);
     setUploadStatus(`Selected ${jsonFiles.length} JSON files`);
-    SetAnalysisResult(null);
+    setAnalysisResult(null);
   }
 
   const handleAnalyseFiles = async (event) => {
-    event.PreventDefault();
+    event.preventDefault();
 
     if (selectedFiles.length === 0){
       setUploadStatus('Please select a folder containing JSON files');
@@ -44,7 +42,7 @@ function App() {
       setIsProcessing(true);
       setUploadStatus('Analyzing Files...');
 
-      const response = await fetch('api/analyze-files', {
+      const response = await fetch('/api/analyze-spotify', {
         method: 'POST',
         body: formData,
       });
@@ -70,14 +68,6 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
       <h1>Spotify Visualization Tool</h1>
       <div className="card">
       {/* File Upload Section*/}
@@ -96,10 +86,29 @@ function App() {
               accept='.json' 
             />
             <br /><br />
-            <button type='submit' disable={isProcessing}>
+            <button type='submit' disabled={isProcessing}>
               {isProcessing ? 'Analyzing...' : 'Analyze Files'}
             </button>
           </form>
+
+          {/* Display analysis results with song count */}
+          {analysisResult && (
+            <div className="/api/analysis-spotify">
+              <h4>Analysis Results</h4>
+              <p><strong>Total Songs Processed:</strong> {analysisResult.combinedData.totalSongs?.toLocaleString()}</p>
+              <p><strong>Total Records:</strong> {analysisResult.combinedData.totalRecords?.toLocaleString()}</p>
+              <p><strong>Files Analyzed:</strong> {analysisResult.processedFiles.length}</p>
+
+              {/* You can add more analysis results here */}
+              {analysisResult.analysis && (
+                <div className="detailed-stats">
+                  <p><strong>Unique Artists:</strong> {analysisResult.analysis.unique_artists?.toLocaleString()}</p>
+                  <p><strong>Unique Tracks:</strong> {analysisResult.analysis.unique_tracks?.toLocaleString()}</p>
+                  <p><strong>Unique Albums:</strong> {analysisResult.analysis.unique_albums?.toLocaleString()}</p>
+                </div>
+              )}
+            </div>
+          )}
 
           {uploadStatus && (
             <div className={`status ${isProcessing ? 'processing': ''}`}>
@@ -107,21 +116,7 @@ function App() {
             </div>
           )}
         </div>
-
-        <form action="/upload" method="post" enctype="multipart/form-data">
-          <label for="myFile">Select a File:</label>
-          <input type="file" name="myFile" id="myFile" accept=".json"></input>
-          <br></br><br></br>
-          <button type="submit">Upload File</button>
-        </form>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-        <p>The Current time is {new Date(currentTime * 1000).toLocaleString()}.</p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }

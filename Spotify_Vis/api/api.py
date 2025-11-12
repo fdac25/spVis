@@ -17,10 +17,10 @@ CORS(app)
 
 UPLOAD_FOLDER = './uploads'
 ALLOWED_EXTENSIONS = {'json'}
-MAX_CONTENT_LENTH = 16 * 1024 * 1024
+MAX_CONTENT_LENGTH = 500 * 1024 * 1024
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-app.config['MAX_CONTENT_LENGTH'] = MAX_CONTENT_LENTH
+app.config['MAX_CONTENT_LENGTH'] = MAX_CONTENT_LENGTH
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 def allowed_file(filename):
@@ -159,12 +159,21 @@ def analyze_spotify_files():
         all_dataframes = []
         processed_files = []
         errors = []
+        total_songs = 0
         
         for file in uploaded_files:
             if file and allowed_file(file.filename):
                 try:
                     file_content = file.read().decode('utf-8')
                     json_data = json.loads(file_content)
+
+                    # Count songs in this file
+                    if isinstance(json_data, list):
+                        file_song_count = len(json_data)
+                    else:
+                        file_song_count = 1
+                    
+                    total_songs += file_song_count  # ADDED: Accumulate total songs
                     
                     # Handle Spotify JSON structure (array of listening events)
                     if isinstance(json_data, list):
@@ -179,6 +188,7 @@ def analyze_spotify_files():
                     processed_files.append({
                         'filename': file.filename,
                         'records': df.shape[0],
+                        'song_count': file_song_count,
                         'columns': list(df.columns)
                     })
                     
@@ -200,6 +210,7 @@ def analyze_spotify_files():
         # Print basic info (for debugging)
         num_rows = combined_df.shape[0]
         print(f"Total rows: {num_rows}")
+        print(f"Total songs: {total_songs}")
         
         if 'master_metadata_album_artist_name' in combined_df.columns:
             artist_count = combined_df['master_metadata_album_artist_name'].value_counts()
@@ -228,6 +239,7 @@ def analyze_spotify_files():
             'processedFiles': processed_files,
             'combinedData': {
                 'totalRecords': len(combined_df),
+                'totalSongs': total_songs,
                 'shape': combined_df.shape,
                 'sample': sample_data
             },
@@ -242,4 +254,4 @@ def analyze_spotify_files():
         return jsonify({'error': f'Server error: {str(e)}'}), 500
     
 if __name__ == '__main__':
-    app.run(debug=True, port=5001)
+    app.run(debug=True, port=5173)
