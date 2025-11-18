@@ -240,11 +240,8 @@ def analyze_spotify_files():
             'combinedData': {
                 'totalRecords': len(combined_df),
                 'totalSongs': total_songs,
-                'shape': combined_df.shape,
-                'sample': sample_data
             },
             'analysis': analysis_results,
-            'visualizations': visualization_images,
             'errors': errors
         }
         
