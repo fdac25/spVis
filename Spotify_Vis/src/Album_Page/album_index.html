@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <!--Head Code-->
+    <head>
+        <!--Set the character set to UTF-8-->
+        <meta charset="UTF-8" />
+        <!--Setup the viewport to scale with the device-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Connect the stylesheet to the album_style.css-->
+        <link rel="stylesheet" href="./album_style.css" />
+        <!--Title of the webpage-->
+        <title>SpVis - Album</title>
+    </head>
+    <!--Body Code-->
+    <body>
+        <!--Header Code-->
+        <header>
+            <a href="#" class="logo">SpVis</a>
+            <!--Navigation Bar-->
+            <nav>
+                <a href="#">Home</a> <!--Placeholder until Homepage is designed-->
+                <a href="../Track_Page/tracks_index.html">Tracks</a>
+                <a href="./album_index.html">Albums</a>
+                <a href="#">Artists</a> <!--Placeholder until Artists page are designed-->
+            </nav>
+        </header>
+        
+        <!--Top of Page code-->
+        <section class="album_top">
+            <!--Albums Image (Vinyl Record)-->
+            <div class="album-img_top">
+                <img src="#" alt="Vinyl Record">
+            </div>
+            <div class="album-content_top">
+                <h1>Your</h1><span>TOP</span><h1>Albums</h1>
+            </div>
+        </section>
+
+        <!--Separator-->
+        <section class="separator_top">
+            <img src="./assets/black_and_grey_Background_2.PNG" alt="background">
+        </section>
+
+        <!--Middle of Page-->
+        <section class="album_middle">
+            <!--Controllers for the User-->
+            <div class="controls-container">
+                <h3>Top Albums</h3>
+                    <!--Date Filter-->
+                <div class="filter-row">
+                    <!--Starting Date-->
+                    <div class="input-group">
+                        <label for="startDate">Start:</label>
+                        <input type="date" id="startDate" name="startDate">
+                    </div>
+                    <!--Ending Date-->
+                    <div class="input-group">
+                        <label for="endDate">End:</label>
+                        <input type="date" id="endDate" name="endDate">
+                    </div>
+                    <!--Time of Day-->
+                    <div class="input-group">
+                        <label for="timeFilter">Time of Day:</label>
+                        <select id="timeFilter">
+                            <option value="all">All Day</option>
+                            <option value="morning">Morning (6am - 12pm)</option>
+                            <option value="afternoon">Afternoon (12pm - 5pm)</option>
+                            <option value="evening">Evening (5pm - 9pm)</option>
+                            <option value="night">Late Night (9pm - 6am)</option>
+                        </select>
+                    </div>
+                    <!--Season Filter-->
+                    <div class="input-group">
+                        <label for="seasonFilter">Seasons:</label>
+                        <select id="seasonFilter">
+                            <option value="all">All Year</option>
+                            <option value="spring">Spring (Mar-May)</option>
+                            <option value="summer">Summer (Jun-Aug)</option>
+                            <option value="fall">Fall (Sep-Nov)</option>
+                            <option value="winter">Winter (Dec-Feb)</option>
+                        </select>
+                    </div>
+
+                    <!--Apply Filter-->
+                    <button type="button" class="filter_button">Apply Filter</button>
+                </div>
+            </div>
+
+            <ul id="albumList" class="album-list">
+                </ul>
+        </section>
+        
+        <h3>SpVis - 2025</h3>
+        <!--Connect Scripts-->
+        <script src="./album_js.js"></script>
+    </body>
+</html>
+    
