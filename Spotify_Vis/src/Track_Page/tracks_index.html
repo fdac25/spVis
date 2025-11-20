@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../tracks_style.css" />
+        <title>Spotify Visualizer</title>
+    </head>
+
+    <body>
+        <!-- HEADER CODE -->
+        <header>
+        <!-- BACKEND GOES HERE! Replace # with html locations to the home page, and other pages-->
+            <a href="#" class="logo">SpVis</a>              <!-- home page-->
+            <nav>
+                <a href = "#">Home</a>     <!-- home page-->
+                <a href = "./tracks_index.html" class = "active"> Tracks</a>                   <!-- this page-->
+                <a href = "#"> Albums</a>                   <!-- album page-->
+                <a href = "#"> Artists</a>                  <!-- artist page-->
+            </nav>
+        </header>
+
+        <!-- TOP SECTION CODE -->
+        <section class = "tracks_top">
+            <div class = "tracks-img_top">
+                <img src = "assets/track_front_img.png", alt="playing bar">
+            </div>
+            <div class = "tracks-content_top">
+                <h1> Your </h1> <span> TOP </span> <h1> tracks</h1>
+        </section>
+        <section class = "seperator_top">
+            <img src = "assets/black_and_grey_Background_2.PNG", alt="background">
+        </section>
+
+        <!-- MIDDLE SECTION (Top tracks) CODE -->
+        <section class="tracks_middle">
+            <h3>Top 10 Tracks</h3>
+
+            <!-- BACKEND NEEDS TO GO HERE!-->
+            <!-- THESE ARE HARD CODED!!! Need to connect to Backend!-->
+            <div class="date-filter">
+                <label for="startDate"> Start Date:</label>
+                <input type="date" id="startDate" name="startDate">
+                <label for="endDate"> End Date:</label>
+                <input type="date" id="endDate" name="endDate">
+                <button type="button", class = "filter_button">Filter</button>
+            </div>
+            <ul id="songList" class="song-list">
+                <li class="song">
+                    <span class="rank">1</span>
+                    <span class="title">Song Title One</span>
+                    <span class="artist">Artist Name</span>
+                </li>
+
+                <li class="song">
+                    <span class="rank">2</span>
+                    <span class="title">Song Title Two</span>
+                    <span class="artist">Artist Name</span>
+                </li>
+                <li class="song">
+                    <span class="rank">3</span>
+                    <span class="title">Song Title Three</span>
+                    <span class="artist">Artist Name</span>
+                </li>
+
+            </ul>
+        </section>
+        <h3> SpVis- 2025</h3>
+        
+        <!-- JS linking -->
+        <script src="./tracks_js.js"></script>
+    </body>
+</html>
