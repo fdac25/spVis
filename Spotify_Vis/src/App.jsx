@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import './App.css'
+import AlbumPage from /Album_Page/album_index.html;
 
 function App() {
   const [selectedFiles, setSelectedFiles] = useState([])
@@ -141,8 +142,17 @@ function App() {
       >
         Home
       </button>
-      <button onClick={() => navigateTo('artists')}>
+      <button onClick={() => navigateTo('artists')}
+              style={{ marginRight: '1rem' }}>
         Artists
+      </button>
+      <button onClick={() => navigateTo('/Track_Page/tracks_index.html')}
+              style={{ marginRight: '1rem' }}>
+        Tracks
+      </button>
+      <button onClick={() => window.open('albums')}
+              style={{ marginRight: '1rem' }}>
+        Albums
       </button>
     </nav>
     )
@@ -153,6 +163,7 @@ function App() {
       <Navigation />
       {currentPage === 'home' && <HomePage />}
       {currentPage === 'artists' && <ArtistsPage />}
+      {currentPage === 'albums' && <AlbumPage />}
     </div>
   )
   
