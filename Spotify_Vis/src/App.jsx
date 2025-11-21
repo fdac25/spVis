@@ -133,6 +133,7 @@ function App() {
 
   const Navigation = () => {
     if (!analysisResult) return null;
+    if (currentPage == 'tracks') return null;
 
     return (
     <nav style={{ padding: '1rem', backgroundColor: 'transparent', marginBottom: '1rem' }}>
