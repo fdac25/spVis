@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import './App.css'
 import TrackPage from './Track_Page.jsx';
+import AlbumPage from './Album_Page.jsx';
 
 function App() {
   const [selectedFiles, setSelectedFiles] = useState([])

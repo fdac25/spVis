@@ -10,6 +10,7 @@ import io
 import base64
 from werkzeug.utils import secure_filename
 from flask_cors import CORS
+from datetime import datetime
 
 
 app = Flask(__name__)
@@ -76,32 +77,6 @@ def create_spotify_visualizations(combined_df, analysis_results):
             images['top_artists_15'] = base64.b64encode(img_buffer.getvalue()).decode()
             plt.close()
 
-        # 2. Top Albums
-        if 'master_metadata_album_album_name' in combined_df.columns:
-            album_count = combined_df['master_metadata_album_album_name'].value_counts()
-            album_count_top_5 = album_count.head()
-            
-            fig, ax = plt.subplots(figsize=(10, 6))
-            bars = ax.bar(album_count_top_5.index, album_count_top_5.values,
-                         color=['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEAA7'])
-            ax.set_xlabel('Album')
-            ax.set_ylabel('Stream Count')
-            ax.set_title('Top 5 Most Streamed Albums')
-            plt.xticks(rotation=45, ha='right')
-            
-            # Add value labels on bars
-            for bar in bars:
-                height = bar.get_height()
-                ax.text(bar.get_x() + bar.get_width()/2., height,
-                       f'{int(height)}', ha='center', va='bottom')
-            
-            plt.tight_layout()
-            img_buffer = io.BytesIO()
-            plt.savefig(img_buffer, format='png', dpi=100, bbox_inches='tight')
-            img_buffer.seek(0)
-            images['top_albums_5'] = base64.b64encode(img_buffer.getvalue()).decode()
-            plt.close()
-
     except Exception as e:
         print(f"Error creating visualizations: {e}")
     
@@ -115,11 +90,8 @@ def analyze_spotify_data(combined_df):
         'unique_albums': combined_df['master_metadata_album_album_name'].nunique() if 'master_metadata_album_album_name' in combined_df.columns else 0,
         'time_period': {},
         'top_artists': {},
-        'top_albums': {},
-        'top_tracks': {},
         'specific_artists': {},
-        'listening_behavior': {},
-        'platform_usage': {}
+        'listening_behavior': {}
     }
     #top artists
     if 'master_metadata_album_artist_name' in combined_df.columns:
@@ -129,16 +101,111 @@ def analyze_spotify_data(combined_df):
             'top_15': artist_counts.head(15).to_dict(),
             'total_unique': len(artist_counts)
         }
-    #top albums
-    if 'master_metadata_album_album_name' in combined_df.columns:
-        album_counts = combined_df['master_metadata_album_album_name'].value_counts()
-        analysis['top_albums'] = {
-            'top_5': album_counts.head(5).to_dict(),
-            'top_15': album_counts.head(15).to_dict(),
-            'total_unique': len(album_counts)
-        }
-
     return analysis
+    
+    
+def artist_stream_buildup(combined_df, artist_name, start_date=None, end_date=None):
+    if 'master_metadata_album_artist_name' not in combined_df.columns or 'ts' not in combined_df.columns:
+        return {}
+    
+    artist_df = combined_df[combined_df['master_metadata_album_artist_name'] == artist_name].copy()
+    
+    if artist_df.empty:
+        return {'error': f'No data found for artist: {artist_name}'}
+    
+    # Convert to datetime and sort
+    artist_df['ts'] = pd.to_datetime(artist_df['ts'])
+    artist_df = artist_df.sort_values('ts')
+    
+    # Apply date filter if provided
+    if start_date:
+        start_date = pd.to_datetime(start_date)
+        artist_df = artist_df[artist_df['ts'] >= start_date]
+    if end_date:
+        end_date = pd.to_datetime(end_date)
+        artist_df = artist_df[artist_df['ts'] <= end_date]
+
+    # Calculate cumulative streams
+    artist_df = artist_df.sort_values('ts')
+    artist_df['cumulative_streams'] = range(1, len(artist_df) + 1)
+    
+    # Group by different time periods for different views
+    daily_streams = artist_df.groupby(artist_df['ts'].dt.date).size()
+    weekly_streams = artist_df.groupby(artist_df['ts'].dt.to_period('W')).size()
+    monthly_streams = artist_df.groupby(artist_df['ts'].dt.to_period('M')).size()
+    
+    # Create buildup data points (for charting)
+    buildup_data = []
+    cumulative = 0
+    for date, count in daily_streams.items():
+        cumulative += count
+        buildup_data.append({
+            'date': date.isoformat(),
+            'daily_streams': count,
+            'cumulative_streams': cumulative
+        })
+    
+    return {
+        'artist_name': artist_name,
+        'total_streams': len(artist_df),
+        'date_range': {
+            'first_stream': artist_df['ts'].min().isoformat(),
+            'last_stream': artist_df['ts'].max().isoformat()
+        },
+        'buildup_data': buildup_data,
+        'period_totals': {
+            'daily': daily_streams.to_dict(),
+            'weekly': {str(period): count for period, count in weekly_streams.items()},
+            'monthly': {str(period): count for period, count in monthly_streams.items()}
+        },
+        'stream_frequency': {
+            'average_daily': len(artist_df) / max(1, (artist_df['ts'].max() - artist_df['ts'].min()).days),
+            'most_active_day': daily_streams.idxmax().isoformat() if not daily_streams.empty else None,
+            'most_streams_in_day': daily_streams.max() if not daily_streams.empty else 0
+        }
+    }
+
+def get_time_of_day_analysis(combined_df, start_date=None, end_date=None):
+    """
+    Get detailed time of day analysis for a specific date range
+    """
+    if 'ts' not in combined_df.columns:
+        return {}
+    
+    df = combined_df.copy()
+    df['ts'] = pd.to_datetime(df['ts'])
+    
+    # Apply date filter if provided
+    if start_date:
+        start_date = pd.to_datetime(start_date)
+        df = df[df['ts'] >= start_date]
+    if end_date:
+        end_date = pd.to_datetime(end_date)
+        df = df[df['ts'] <= end_date]
+    
+    # Hourly analysis
+    df['hour'] = df['ts'].dt.hour
+    hourly_counts = df['hour'].value_counts().sort_index()
+    
+    # Fill missing hours with 0
+    all_hours = pd.Series(0, index=range(24))
+    hourly_counts = hourly_counts.reindex(all_hours.index, fill_value=0)
+    
+    return {
+        'hourly_distribution': hourly_counts.to_dict(),
+        'peak_hour': hourly_counts.idxmax(),
+        'peak_hour_count': hourly_counts.max(),
+        'time_of_day_summary': {
+            'early_morning_0_5': hourly_counts.loc[0:5].sum(),
+            'morning_6_11': hourly_counts.loc[6:11].sum(),
+            'afternoon_12_17': hourly_counts.loc[12:17].sum(),
+            'evening_18_21': hourly_counts.loc[18:21].sum(),
+            'late_night_22_23': hourly_counts.loc[22:23].sum()
+        },
+        'total_streams_in_range': len(df)
+    }
+
+
 
 @app.route('/api/time')
 def get_current_time():
@@ -216,14 +283,6 @@ def analyze_spotify_files():
             artist_count = combined_df['master_metadata_album_artist_name'].value_counts()
             print("Top artists:")
             print(artist_count.head())
-            
-            # Specific artist count (like in your example)
-            if 'Kanye West' in artist_count:
-                kanye_count = artist_count['Kanye West']
-                print(f"# of streams for Kanye West: {kanye_count}")
-            if 'Mac Miller' in artist_count:
-                mac_count = artist_count['Mac Miller']
-                print(f"# of streams for Mac Miller: {mac_count}")
         
         # Perform Spotify-specific analysis
         analysis_results = analyze_spotify_data(combined_df)
@@ -231,8 +290,6 @@ def analyze_spotify_files():
         # Create visualizations
         visualization_images = create_spotify_visualizations(combined_df, analysis_results)
         
-        # Sample data for preview
-        sample_data = combined_df.head(10).to_dict('records')
         
         response_data = {
             'message': f'Successfully analyzed {len(processed_files)} Spotify data files',

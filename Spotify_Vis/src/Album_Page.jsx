@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import '.album_style.css';
+import './album_style.css';
 import backgroundImg from './assets/black_and_grey_Background_2.PNG';
 
 const AlbumPage = () => {
