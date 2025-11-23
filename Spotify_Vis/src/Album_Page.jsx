@@ -3,20 +3,20 @@ import '.album_style.css';
 import backgroundImg from './assets/black_and_grey_Background_2.PNG';
 
 const AlbumPage = () => {
-  //State for storing album data from API
+  {/*State for storing album data from API*/}
   const [albums, setAlbums] = useState([]);
-  //State for filter inputs
+  {/*State for filter inputs*/}
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');
   const [timeFilter, setTimeFilter] = useState('all');
   const [seasonFilter, setSeasonFilter] = useState('all');
 
-  //Initial load (all data)
+  {/*Initial load (all data)*/}
   useEffect(() => {
     fetchAlbums();
   }, []);
 
-  //Fetch from backend API
+  {/*Fetch from backend API*/}
   const fetchAlbums = async (params = {}) => {
     try {
       const queryParams = new URLSearchParams({
@@ -34,7 +34,7 @@ const AlbumPage = () => {
     }
   };
 
-  //Get inputs and use filter button
+  {/*Get inputs and use filter button*/}
   const handleApplyFilter = () => {
     fetchAlbums({
       start: startDate,
