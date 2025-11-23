@@ -134,7 +134,6 @@ function App() {
 
   const Navigation = () => {
     if (!analysisResult) return null;
-    if (currentPage == 'tracks') return null;
 
     return (
     <nav style={{ padding: '1rem', backgroundColor: 'transparent', marginBottom: '1rem' }}>
@@ -152,7 +151,7 @@ function App() {
               style={{ marginRight: '1rem' }}>
         Tracks
       </button>
-      <button onClick={() => window.open('albums')}
+      <button onClick={() => navigateTo('albums')}
               style={{ marginRight: '1rem' }}>
         Albums
       </button>
@@ -164,9 +163,9 @@ function App() {
     <div style={{ padding: '1rem' }}>
       <Navigation />
       {currentPage === 'home' && <HomePage />}
-      {currentPage === 'artists' && <ArtistsPage />}
-      {currentPage === 'albums' && <AlbumPage />}
-      {currentPage === 'tracks' && <TrackPage />}
+      {currentPage === 'artists' && <ArtistsPage analysisResult={analysisResult} />}
+      {currentPage === 'albums' && <AlbumPage analysisResult={analysisResult} />}
+      {currentPage === 'tracks' && <TrackPage analysisResult={analysisResult} />}
     </div>
   )
   
