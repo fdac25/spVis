@@ -211,6 +211,67 @@ def get_time_of_day_analysis(combined_df, start_date=None, end_date=None):
 def get_current_time():
     return {'time': time.time()}
 
+@app.route('/api/top-tracks', methods=['POST'])
+def get_top_tracks():
+    try:
+        # Get the raw track data from the request body
+        data = request.get_json()
+        
+        if not data or 'processedFiles' not in data:
+            return jsonify({'error': 'No data provided'}), 400
+        
+        # Get filter parameters
+        start_date = data.get('start_date', '')
+        end_date = data.get('end_date', '')
+        
+        # Reconstruct the dataframe from the processed files data
+        # We'll need the raw data sent from frontend
+        tracks_data = data.get('tracks_data', [])
+        
+        if not tracks_data:
+            return jsonify({'error': 'No track data available'}), 400
+        
+        # Create DataFrame from the tracks data
+        df = pd.DataFrame(tracks_data)
+        
+        # Apply date filters if provided
+        if 'ts' in df.columns:
+            df['timestamp'] = pd.to_datetime(df['ts'])
+            
+            if start_date and start_date.strip():
+                df = df[df['timestamp'] >= pd.to_datetime(start_date)]
+            if end_date and end_date.strip():
+                df = df[df['timestamp'] <= pd.to_datetime(end_date)]
+        
+        # Get top tracks
+        if 'master_metadata_track_name' in df.columns and 'master_metadata_album_artist_name' in df.columns:
+            # Group by track and artist to get play counts
+            track_counts = df.groupby([
+                'master_metadata_track_name',
+                'master_metadata_album_artist_name'
+            ]).size().reset_index(name='play_count')
+            
+            # Sort by play count and get top 10
+            top_tracks = track_counts.nlargest(10, 'play_count')
+            
+            # Convert to list of dictionaries
+            tracks_list = []
+            for idx, row in top_tracks.iterrows():
+                tracks_list.append({
+                    'rank': len(tracks_list) + 1,
+                    'title': row['master_metadata_track_name'],
+                    'artist': row['master_metadata_album_artist_name'],
+                    'play_count': int(row['play_count'])
+                })
+            
+            return jsonify(tracks_list), 200
+        else:
+            return jsonify({'error': 'Track data not available'}), 400
+            
+    except Exception as e:
+        print(f"Error in top-tracks: {str(e)}")
+        return jsonify({'error': f'Error fetching tracks: {str(e)}'}), 500
+
 @app.route('/api/analyze-spotify', methods=['POST'])
 def analyze_spotify_files():
     try:
@@ -290,6 +351,13 @@ def analyze_spotify_files():
         # Create visualizations
         visualization_images = create_spotify_visualizations(combined_df, analysis_results)
         
+        # Extract minimal tracks data for frontend filtering
+        tracks_data = []
+        if 'master_metadata_track_name' in combined_df.columns and 'master_metadata_album_artist_name' in combined_df.columns:
+            # Only send the essential columns to reduce payload size
+            essential_cols = ['master_metadata_track_name', 'master_metadata_album_artist_name', 'ts']
+            available_cols = [col for col in essential_cols if col in combined_df.columns]
+            tracks_data = combined_df[available_cols].to_dict('records')
         
         response_data = {
             'message': f'Successfully analyzed {len(processed_files)} Spotify data files',
@@ -297,6 +365,7 @@ def analyze_spotify_files():
             'combinedData': {
                 'totalRecords': len(combined_df),
                 'totalSongs': total_songs,
+                'tracksData': tracks_data  # Add raw tracks data here
             },
             'analysis': analysis_results,
             'errors': errors
