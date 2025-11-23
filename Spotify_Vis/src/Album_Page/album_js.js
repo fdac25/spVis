@@ -5,7 +5,7 @@ document.querySelector(".filter_button").addEventListener("click", () => {
   const timeFilter = document.getElementById("timeFilter").value || "all";
   const seasonFilter = document.getElementById("seasonFilter").value || "all";
 
-  // Fetch from backend API (align with tracks; backend aggregates 5 accounts)
+  // Fetch from backend API 
   fetch(`/api/top-albums?start=${start}&end=${end}&time=${timeFilter}&season=${seasonFilter}`)
     .then(result => result.json())
     .then(data => renderAlbums(data))

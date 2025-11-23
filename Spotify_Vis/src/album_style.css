@@ -42,7 +42,8 @@ nav a{
 }
 
 nav a.active, nav a:hover { 
-    color: #fff; 
+    color: rgb(125, 238, 117);
+    border-bottom: 3px solid rgb(125, 238, 117);
 }
 
 /* Top Section */
@@ -53,6 +54,29 @@ nav a.active, nav a:hover {
     padding: 80px 40px; 
     gap: 60px; 
     background: linear-gradient(180deg, #222 0%, #000 100%); 
+}
+
+/* Vinyl Record Spin Animation */
+.album-img_top svg {
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 0 rgba(29, 185, 84, 0));
+}
+
+.album-img_top svg:hover {
+    animation: spin 0.8s linear infinite;
+    filter: drop-shadow(0 0 20px rgba(29, 185, 84, 0.6));
+    transform: scale(1.05);
+}
+
+@keyframes spin {
+    0% {
+        transform: scale(1.05) rotate(0deg);
+    }
+    100% {
+        transform: scale(1.05) rotate(360deg);
+    }
 }
 
 .album-img_top img:hover { 
