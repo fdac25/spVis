@@ -205,11 +205,7 @@ def get_time_of_day_analysis(combined_df, start_date=None, end_date=None):
         'total_streams_in_range': len(df)
     }
 
-
-
-@app.route('/api/time')
-def get_current_time():
-    return {'time': time.time()}
+current_combined = None
 
 @app.route('/api/top-tracks', methods=['POST'])
 def get_top_tracks():
@@ -348,9 +344,6 @@ def analyze_spotify_files():
         # Perform Spotify-specific analysis
         analysis_results = analyze_spotify_data(combined_df)
         
-        # Create visualizations
-        visualization_images = create_spotify_visualizations(combined_df, analysis_results)
-        
         # Extract minimal tracks data for frontend filtering
         tracks_data = []
         if 'master_metadata_track_name' in combined_df.columns and 'master_metadata_album_artist_name' in combined_df.columns:
@@ -358,6 +351,11 @@ def analyze_spotify_files():
             essential_cols = ['master_metadata_track_name', 'master_metadata_album_artist_name', 'ts']
             available_cols = [col for col in essential_cols if col in combined_df.columns]
             tracks_data = combined_df[available_cols].to_dict('records')
+        
+        current_analysis_data = {
+            'combined_df': combined_df,
+            'analysis_results': analysis_results
+        }
         
         response_data = {
             'message': f'Successfully analyzed {len(processed_files)} Spotify data files',
@@ -375,6 +373,62 @@ def analyze_spotify_files():
         
     except Exception as e:
         return jsonify({'error': f'Server error: {str(e)}'}), 500
+
+
+@app.route('/api/artists/time-of-day-analysis', methods=['GET'])
+def get_artists_TOD_analysis():
+    global current_combined
+
+    if not current_combined or current_combined['combined_df'] is None:
+        return jsonify({'error': 'No analysis data available. Please analyze files first.'}), 400
+    try:
+        time_analysis = get_time_of_day_analysis(current_combined['combined_df'])
+        return jsonify(time_analysis)
+    except Exception as e:
+        return jsonify({'error': f'Error analyzing time patterns: {str(e)}'}), 500
     
+@app.route('/api/artists/stream-buildup', methods=['POST'])
+def get_artists_buildup():
+    global current_combined
+
+    if not current_combined or current_combined['combined_df'] is None:
+        return jsonify({'error': 'No analysis data available. Please analyze files first.'}), 400
+    try:
+        data = request.get_json()
+        if not data:
+            return jsonify({'error': 'No JSON data provided'}), 400
+        
+        artist_name = data.get('artistName')
+        start_date = data.get('startDate')
+        end_date = data.get('endDate')
+
+        if not artist_name:
+            return jsonify({'error': 'Artist name is required'}), 400
+        
+        buildup_data = artist_stream_buildup(
+            current_combined['combined_df'],
+            artist_name,
+            start_date,
+            end_date
+        )
+
+        return jsonify(buildup_data)
+    except Exception as e:
+        return jsonify({'error': f'Error analyzing artist buildup: {str(e)}'}), 500
+
+
+@app.route('/api/artists/top-artists', methods=['GET'])
+def get_top_artists():
+    global current_combined
+
+    if not current_combined:
+        return jsonify({'top_artists': {}})
+    
+    try:
+        top_artists = current_combined['analysis_results'].get('top_artists', {})
+        return jsonify({'top_artists': top_artists})
+    except Exception as e:
+        return jsonify({'error':f'Error getting top artists: {str(e)}'}), 500
+
 if __name__ == '__main__':
     app.run(debug=True, port=5173)
