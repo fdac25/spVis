@@ -430,5 +430,72 @@ def get_top_artists():
     except Exception as e:
         return jsonify({'error':f'Error getting top artists: {str(e)}'}), 500
 
+@app.route('/api/top-albums', methods=['GET'])
+def get_top_albums():
+    global current_combined
+
+    if not current_combined or current_combined['combined_df'] is None:
+        return jsonify([])  # No data yet
+
+    df = current_combined['combined_df'].copy()
+    df['ts'] = pd.to_datetime(df['ts'])
+
+    # Filters
+    start = request.args.get('start', '')
+    end = request.args.get('end', '')
+    time_filter = request.args.get('time', 'all')
+    season = request.args.get('season', 'all')
+
+    # Date filters
+    if start:
+        df = df[df['ts'] >= pd.to_datetime(start)]
+    if end:
+        df = df[df['ts'] <= pd.to_datetime(end)]
+
+    # Time-of-day filter
+    if time_filter != 'all':
+        hour = df['ts'].dt.hour
+        if time_filter == 'morning':
+            df = df[(hour >= 6) & (hour < 12)]
+        elif time_filter == 'afternoon':
+            df = df[(hour >= 12) & (hour < 17)]
+        elif time_filter == 'evening':
+            df = df[(hour >= 17) & (hour < 21)]
+        elif time_filter == 'night':
+            df = df[(hour >= 21) | (hour < 6)]
+
+    # Season filter
+    month = df['ts'].dt.month
+    if season == 'spring':
+        df = df[month.isin([3,4,5])]
+    elif season == 'summer':
+        df = df[month.isin([6,7,8])]
+    elif season == 'fall':
+        df = df[month.isin([9,10,11])]
+    elif season == 'winter':
+        df = df[month.isin([12,1,2])]
+
+    # Album aggregation
+    if 'master_metadata_album_album_name' not in df.columns:
+        return jsonify([])
+
+    album_counts = df.groupby([
+        'master_metadata_album_album_name',
+        'master_metadata_album_artist_name'
+    ]).size().reset_index(name='plays')
+
+    album_counts = album_counts.sort_values('plays', ascending=False)
+
+    results = []
+    for _, row in album_counts.iterrows():
+        results.append({
+            'title': row['master_metadata_album_album_name'],
+            'artist': row['master_metadata_album_artist_name'],
+            'plays': int(row['plays']),
+            'cover': ''  # optional placeholder
+        })
+
+    return jsonify(results)
+
 if __name__ == '__main__':
     app.run(debug=True, port=5173)
