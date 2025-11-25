@@ -406,64 +406,61 @@ def analyze_spotify_files():
     combined_df['ts'] = pd.to_datetime(combined_df['ts'], errors='coerce')
 
         # Perform analysis ONCE
-        analysis_results = analyze_spotify_data(combined_df)
+    analysis_results = analyze_spotify_data(combined_df)
         
         # Create visualizations
-        visualization_images = create_spotify_visualizations(combined_df, analysis_results)
+    visualization_images = create_spotify_visualizations(combined_df, analysis_results)
         
         # Print debug info
-        num_rows = combined_df.shape[0]
-        print(f"Total rows: {num_rows}")
-        print(f"Total songs: {total_songs}")
-        
-        if 'master_metadata_album_artist_name' in combined_df.columns:
-            artist_count = combined_df['master_metadata_album_artist_name'].value_counts()
-            print("Top artists:")
-            print(artist_count.head())
-        
-        # Extract tracks data for frontend ONCE
-        tracks_data = []
-        if 'master_metadata_track_name' in combined_df.columns and 'master_metadata_album_artist_name' in combined_df.columns:
-            essential_cols = ['master_metadata_track_name', 'master_metadata_album_artist_name', 'ts']
-            available_cols = [col for col in essential_cols if col in combined_df.columns]
-            tracks_data = combined_df[available_cols].to_dict('records')
-        
-        # Store globally for other endpoints
-        current_combined = {
-            'combined_df': combined_df,
-            'analysis_results': analysis_results,
-            'visualizations': visualization_images
-        }
+    num_rows = combined_df.shape[0]
+    print(f"Total rows: {num_rows}")
+    print(f"Total songs: {total_songs}")
+    
+    if 'master_metadata_album_artist_name' in combined_df.columns:
+        artist_count = combined_df['master_metadata_album_artist_name'].value_counts()
+        print("Top artists:")
+        print(artist_count.head())
+    
+    # Extract tracks data for frontend ONCE
+    tracks_data = []
+    if 'master_metadata_track_name' in combined_df.columns and 'master_metadata_album_artist_name' in combined_df.columns:
+        essential_cols = ['master_metadata_track_name', 'master_metadata_album_artist_name', 'ts']
+        available_cols = [col for col in essential_cols if col in combined_df.columns]
+        tracks_data = combined_df[available_cols].to_dict('records')
+    
+    # Store globally for other endpoints
+    current_combined = {
+        'combined_df': combined_df,
+        'analysis_results': analysis_results,
+        'visualizations': visualization_images
+    }
 
-        # **CRITICAL: Return ALL necessary data for frontend**
-        response_data = {
-            'message': f'Successfully analyzed {len(processed_files)} Spotify data files',
-            'processedFiles': processed_files,
-            'combinedData': {
-                'totalRecords': len(combined_df),
-                'totalSongs': total_songs,
-                'tracksData': tracks_data  
-            },
-            'analysis': analysis_results,  # This is what ArtistsPage needs!
-            'visualizations': visualization_images,
-            'errors': errors,
-            # Add explicit success flag
-            'success': True,
-            # Add analysis metadata for frontend
-            'analysisMetadata': {
-                'hasData': True,
-                'totalArtists': analysis_results.get('unique_artists', 0),
-                'totalTracks': analysis_results.get('unique_tracks', 0),
-                'totalStreams': analysis_results.get('total_streams', 0)
-            }
+    # **CRITICAL: Return ALL necessary data for frontend**
+    response_data = {
+        'message': f'Successfully analyzed {len(processed_files)} Spotify data files',
+        'processedFiles': processed_files,
+        'combinedData': {
+            'totalRecords': len(combined_df),
+            'totalSongs': total_songs,
+            'tracksData': tracks_data  
+        },
+        'analysis': analysis_results,  # This is what ArtistsPage needs!
+        'visualizations': visualization_images,
+        'errors': errors,
+        # Add explicit success flag
+        'success': True,
+        # Add analysis metadata for frontend
+        'analysisMetadata': {
+            'hasData': True,
+            'totalArtists': analysis_results.get('unique_artists', 0),
+            'totalTracks': analysis_results.get('unique_tracks', 0),
+            'totalStreams': analysis_results.get('total_streams', 0)
         }
+    }
+    
+    print(f"Analysis complete. Returning data with {len(combined_df)} records")
+    return jsonify(response_data), 200
         
-        print(f"Analysis complete. Returning data with {len(combined_df)} records")
-        return jsonify(response_data), 200
-        
-    except Exception as e:
-        print(f"Error in analyze-spotify: {str(e)}")
-        return jsonify({'error': f'Server error: {str(e)}'}), 500
 
 
 @app.route('/api/artists/time-of-day-analysis', methods=['GET'])
