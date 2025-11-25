@@ -164,9 +164,9 @@ const AlbumPage = () => {
             albums.slice(0, 50).map((album, index) => (
               <li key={`${album.title}-${index}`} className="album">
                 <span className="rank">{index + 1}</span>
-                <div className="album-cover">
+                {/* <div className="album-cover">
                   <img src={album.cover || 'assets/placeholder_album.jpg'} alt={album.title} />
-                </div>
+                </div> */}
                 <span className="title">{album.title}</span>
                 <span className="artist">{album.artist}</span>
                 <span className="playcount">{album.plays.toLocaleString()} plays</span>
