@@ -10,7 +10,7 @@ import io
 import base64
 from werkzeug.utils import secure_filename
 from flask_cors import CORS
-from datetime import datetime
+
 
 
 
@@ -24,6 +24,7 @@ CORS(app)
 UPLOAD_FOLDER = './uploads'
 ALLOWED_EXTENSIONS = {'json'}
 MAX_CONTENT_LENGTH = 500 * 1024 * 1024
+current_combined = None
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = MAX_CONTENT_LENGTH
@@ -285,6 +286,95 @@ def get_top_albums():
 # ======================================
 # Run Backend (Port 5001)
 # ======================================
+
+@app.route('/api/artists/available-artists', methods=['GET'])
+def get_available_artists():
+    global current_combined
+    
+    if not current_combined or current_combined['combined_df'] is None:
+        return jsonify({'artists': []})
+    
+    try:
+        if 'master_metadata_album_artist_name' in current_combined['combined_df'].columns:
+            artist_counts = current_combined['combined_df']['master_metadata_album_artist_name'].value_counts()
+            artists = artist_counts.head(50).index.tolist()  # Top 50 artists
+        else:
+            artists = []
+        
+        return jsonify({'artists': artists})
+    
+    except Exception as e:
+        return jsonify({'error': f'Error getting artists list: {str(e)}'}), 500
+
+@app.route('/api/visualizations/top-artists', methods=['GET'])
+def get_top_artists_visualization():
+    """Get the top artists visualization as base64 image"""
+    global current_combined
+    
+    if not current_combined or 'visualizations' not in current_combined:
+        return jsonify({'error': 'No visualizations available'}), 400
+    
+    try:
+        # Get specific visualization
+        top_5_image = current_combined['visualizations'].get('top_artists_5')
+        top_15_image = current_combined['visualizations'].get('top_artists_15')
+        
+        if not top_5_image and not top_15_image:
+            return jsonify({'error': 'Artist visualizations not found'}), 404
+        
+        return jsonify({
+            'top_artists_5': top_5_image,
+            'top_artists_15': top_15_image
+        })
+    
+    except Exception as e:
+        return jsonify({'error': f'Error getting visualization: {str(e)}'}), 500
+
+@app.route('/api/visualizations/all', methods=['GET'])
+def get_all_visualizations():
+    """Get all available visualizations"""
+    global current_combined
+    
+    if not current_combined or 'visualizations' not in current_combined:
+        return jsonify({'error': 'No visualizations available'}), 400
+    
+    return jsonify(current_combined['visualizations'])
+
+@app.route('/api/debug', methods=['GET'])
+def debug_endpoint():
+    global current_combined
+    return jsonify({
+        'has_data': current_combined is not None,
+        'has_combined_df': current_combined and 'combined_df' in current_combined,
+        'has_visualizations': current_combined and 'visualizations' in current_combined,
+        'data_keys': list(current_combined.keys()) if current_combined else []
+    })
+
+@app.route('/api/analysis/status', methods=['GET'])
+def get_analysis_status():
+    """Check if analysis data is available"""
+    global current_combined
+    status = {
+        'hasAnalysis': current_combined is not None,
+        'analysisReady': False,
+        'totalRecords': 0,
+        'totalArtists': 0,
+        'ready': False
+    }
+    
+    if current_combined and 'combined_df' in current_combined:
+        df = current_combined['combined_df']
+        status.update({
+            'analysisReady': True,
+            'ready': True,
+            'totalRecords': len(df),
+            'totalArtists': df['master_metadata_album_artist_name'].nunique() if 'master_metadata_album_artist_name' in df.columns else 0,
+            'hasVisualizations': 'visualizations' in current_combined and bool(current_combined['visualizations'])
+        })
+    
+    return jsonify(status)
+
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5001)

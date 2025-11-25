@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import TrackPage from './Track_Page.jsx';
 import AlbumPage from './Album_Page.jsx';
+import ArtistsPage from './Artist_page.jsx';
 import './App.css'
 
 function App() {
@@ -47,11 +48,22 @@ function App() {
 
       if(response.ok) {
         setUploadStatus(`Successfully analyzed ${result.processedFiles.length} files`);
+        // CRITICAL: Store the entire result for ArtistsPage
         setAnalysisResult(result);
-
+        
+        // ALSO store in localStorage as backup for page navigation
+        localStorage.setItem('spotifyAnalysisResult', JSON.stringify(result));
+        
+        // Clear files
         setSelectedFiles([]);
         const fileInput = document.getElementById('folderInput');
         if(fileInput) fileInput.value = '';
+        
+        console.log('Analysis completed successfully:', {
+          totalRecords: result.combinedData?.totalRecords,
+          totalArtists: result.analysis?.unique_artists,
+          hasVisualizations: !!result.visualizations
+        });
       } else {
         setUploadStatus(`Analysis failed: ${result.error}`);
       }
@@ -170,13 +182,5 @@ function App() {
   )
   
 }
-
-
-const ArtistsPage = () => (
-  <>
-    <h1>Artist Analysis</h1>
-  
-  </>
-)
 
 export default App
