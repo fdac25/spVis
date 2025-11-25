@@ -2,7 +2,7 @@ import numpy as np
 from flask import Flask, request, jsonify
 import os
 import json
-import pandas as pd 
+import pandas as pd
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -13,6 +13,11 @@ from datetime import datetime, date
 from flask_cors import CORS
 
 
+
+
+# ======================================
+# FLASK SETUP
+# ======================================
 
 app = Flask(__name__)
 CORS(app)
@@ -26,8 +31,44 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = MAX_CONTENT_LENGTH
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
+current_combined = None  # STORES ANALYZED DATA
+
+
+# ======================================
+# HELPERS
+# ======================================
+
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+
+# Create visualizations (optional)
+def create_spotify_visualizations(combined_df, analysis_results):
+    images = {}
+    try:
+        plt.style.use('default')
+
+        if 'master_metadata_album_artist_name' in combined_df.columns:
+            artist_count = combined_df['master_metadata_album_artist_name'].value_counts()
+            artist_count_top_5 = artist_count.head()
+
+            fig, ax = plt.subplots(figsize=(10, 6))
+            bars = ax.bar(artist_count_top_5.index, artist_count_top_5.values,
+                           color=['#1DB954', '#191414', '#1ED760', '#1AA34A', '#168B3C'])
+            plt.xticks(rotation=45)
+            ax.set_title("Top 5 Artists")
+            plt.tight_layout()
+
+            buf = io.BytesIO()
+            plt.savefig(buf, format='png')
+            buf.seek(0)
+            images['top_artists_5'] = base64.b64encode(buf.getvalue()).decode()
+            plt.close()
+
+    except Exception as e:
+        print("Visualization error:", e)
+
+    return images
 
 
 def analyze_spotify_data(combined_df):
@@ -36,13 +77,9 @@ def analyze_spotify_data(combined_df):
         'unique_artists': combined_df['master_metadata_album_artist_name'].nunique() if 'master_metadata_album_artist_name' in combined_df.columns else 0,
         'unique_tracks': combined_df['master_metadata_track_name'].nunique() if 'master_metadata_track_name' in combined_df.columns else 0,
         'unique_albums': combined_df['master_metadata_album_album_name'].nunique() if 'master_metadata_album_album_name' in combined_df.columns else 0,
-        'time_period': {},
-        'top_artists': {},
-        'specific_artists': {},
-        'listening_behavior': {},
-        'images': {}
+        'top_artists': {}
     }
-    #top artists
+
     if 'master_metadata_album_artist_name' in combined_df.columns:
         artist_counts = combined_df['master_metadata_album_artist_name'].value_counts()
         analysis['top_artists'] = {
@@ -50,6 +87,7 @@ def analyze_spotify_data(combined_df):
             'top_15': artist_counts.head(15).to_dict(),
             'total_unique': len(artist_counts)
         }
+
     return analysis
     
     
@@ -118,116 +156,41 @@ def get_time_of_day_analysis(combined_df, start_date=None, end_date=None):
     """
     Get detailed time of day analysis for a specific date range
     """
-    try:
-        if 'ts' not in combined_df.columns:
-            return {'error': 'Timestamp data not available'}
-        
-        df = combined_df.copy()
-        
-        # Convert to datetime and handle errors
-        df['ts'] = pd.to_datetime(df['ts'], errors='coerce')
-        
-        # Check for invalid timestamps
-        invalid_timestamps = df['ts'].isna().sum()
-        if invalid_timestamps > 0:
-            df = df.dropna(subset=['ts'])
-        
-        if len(df) == 0:
-            return {'error': 'No valid timestamp data available'}
-        
-        # Apply date filter if provided
-        if start_date:
-            try:
-                start_date = pd.to_datetime(start_date)
-                df = df[df['ts'] >= start_date]
-            except Exception:
-                pass
-        
-        if end_date:
-            try:
-                end_date = pd.to_datetime(end_date)
-                df = df[df['ts'] <= end_date]
-            except Exception:
-                pass
-        
-        # Hourly analysis - ensure we use native Python types
-        df['hour'] = df['ts'].dt.hour
-        hourly_counts = df['hour'].value_counts().sort_index()
-        
-        # Fill missing hours with 0 and convert to native types
-        all_hours = pd.Series(0, index=range(24))
-        hourly_counts = hourly_counts.reindex(all_hours.index, fill_value=0)
-        
-        # Convert Series to native Python dict with native types
-        hourly_distribution = {}
-        for hour, count in hourly_counts.items():
-            hourly_distribution[int(hour)] = int(count)
-        
-        # Calculate time period summaries with native types
-        time_periods = {
-            'early_morning_0_5': int(hourly_counts.loc[0:5].sum()),
-            'morning_6_11': int(hourly_counts.loc[6:11].sum()),
-            'afternoon_12_17': int(hourly_counts.loc[12:17].sum()),
-            'evening_18_21': int(hourly_counts.loc[18:21].sum()),
-            'late_night_22_23': int(hourly_counts.loc[22:23].sum())
-        }
-        
-        # Find peak hour with native types
-        peak_hour_idx = hourly_counts.idxmax()
-        peak_hour_count = hourly_counts.max()
-        
-        result = {
-            'hourly_distribution': hourly_distribution,
-            'peak_hour': int(peak_hour_idx),
-            'peak_hour_count': int(peak_hour_count),
-            'time_of_day_summary': time_periods,
-            'total_streams_in_range': int(len(df))
-        }
-        
-        print(f"Debug: Analysis completed - peak_hour: {result['peak_hour']}")
-        return result
-        
-    except Exception as e:
-        print(f"Error in get_time_of_day_analysis: {str(e)}")
-        import traceback
-        traceback.print_exc()
-        return {'error': f'Analysis failed: {str(e)}'}
+    if 'ts' not in combined_df.columns:
+        return {}
     
-def convert_to_serializable(obj):
-    """
-    Recursively convert pandas/numpy types to native Python types for JSON serialization
-    """
-    if obj is None:
-        return None
-    elif isinstance(obj, (np.integer, np.int8, np.int16, np.int32, np.int64)):
-        return int(obj)
-    elif isinstance(obj, (np.floating, np.float16, np.float32, np.float64)):
-        return float(obj)
-    elif isinstance(obj, (np.bool_, np.bool)):
-        return bool(obj)
-    elif isinstance(obj, np.ndarray):
-        return obj.tolist()
-    elif isinstance(obj, pd.Series):
-        return obj.tolist()
-    elif isinstance(obj, pd.Timestamp):
-        return obj.isoformat()
-    elif isinstance(obj, (datetime, date)):
-        return obj.isoformat()
-    elif isinstance(obj, dict):
-        return {key: convert_to_serializable(value) for key, value in obj.items()}
-    elif isinstance(obj, (list, tuple)):
-        return [convert_to_serializable(item) for item in obj]
-    elif hasattr(obj, 'dtype') and hasattr(obj, 'tolist'):  # Other pandas/numpy types
-        return obj.tolist()
-    else:
-        return obj
-
-def safe_jsonify(data):
-    """
-    Safely convert data to JSON, handling all pandas/numpy types
-    """
-    serializable_data = convert_to_serializable(data)
-    return jsonify(serializable_data)
+    df = combined_df.copy()
+    df['ts'] = pd.to_datetime(df['ts'])
+    
+    # Apply date filter if provided
+    if start_date:
+        start_date = pd.to_datetime(start_date)
+        df = df[df['ts'] >= start_date]
+    if end_date:
+        end_date = pd.to_datetime(end_date)
+        df = df[df['ts'] <= end_date]
+    
+    # Hourly analysis
+    df['hour'] = df['ts'].dt.hour
+    hourly_counts = df['hour'].value_counts().sort_index()
+    
+    # Fill missing hours with 0
+    all_hours = pd.Series(0, index=range(24))
+    hourly_counts = hourly_counts.reindex(all_hours.index, fill_value=0)
+    
+    return {
+        'hourly_distribution': hourly_counts.to_dict(),
+        'peak_hour': hourly_counts.idxmax(),
+        'peak_hour_count': hourly_counts.max(),
+        'time_of_day_summary': {
+            'early_morning_0_5': hourly_counts.loc[0:5].sum(),
+            'morning_6_11': hourly_counts.loc[6:11].sum(),
+            'afternoon_12_17': hourly_counts.loc[12:17].sum(),
+            'evening_18_21': hourly_counts.loc[18:21].sum(),
+            'late_night_22_23': hourly_counts.loc[22:23].sum()
+        },
+        'total_streams_in_range': len(df)
+    }
 
 def create_spotify_visualizations(combined_df, analysis_results):
     images = {}
@@ -391,66 +354,56 @@ def get_top_tracks():
 @app.route('/api/analyze-spotify', methods=['POST'])
 def analyze_spotify_files():
     global current_combined
-    try:
-        if 'files' not in request.files:
-            return jsonify({'error': 'No files provided'}), 400
-        
-        files = request.files.getlist('files')
-        uploaded_files = [file for file in files if file.filename != '']
-        
-        if len(uploaded_files) == 0:
-            return jsonify({'error': 'No valid files selected'}), 400
-        
-        all_dataframes = []
-        processed_files = []
-        errors = []
-        total_songs = 0
-        
-        for file in uploaded_files:
-            if file and allowed_file(file.filename):
-                try:
-                    file_content = file.read().decode('utf-8')
-                    json_data = json.loads(file_content)
 
-                    # Count songs in this file
-                    if isinstance(json_data, list):
-                        file_song_count = len(json_data)
-                    else:
-                        file_song_count = 1
-                    
-                    total_songs += file_song_count
-                    
-                    # Handle Spotify JSON structure
-                    if isinstance(json_data, list):
-                        df = pd.DataFrame(json_data)
-                    else:
-                        df = pd.DataFrame([json_data])
-                    
-                    # Add filename for tracking
-                    df['source_file'] = file.filename
-                    all_dataframes.append(df)
-                    
-                    processed_files.append({
-                        'filename': file.filename,
-                        'records': df.shape[0],
-                        'song_count': file_song_count,
-                        'columns': list(df.columns)
-                    })
-                    
-                    print(f"Processed: {file.filename} -> {df.shape[0]} records")
-                    
-                except json.JSONDecodeError as e:
-                    errors.append(f"Invalid JSON in {file.filename}: {str(e)}")
-                except Exception as e:
-                    errors.append(f"Error processing {file.filename}: {str(e)}")
-            else:
-                errors.append(f"Invalid file type: {file.filename}")
-        
-        if len(all_dataframes) == 0:
-            return jsonify({'error': 'No valid JSON files could be processed', 'errors': errors}), 400
-        
-        # Combine all DataFrames
-        combined_df = pd.concat(all_dataframes, ignore_index=True)
+    if 'files' not in request.files:
+        return jsonify({'error': 'No files provided'}), 400
+
+    files = request.files.getlist('files')
+    uploaded = [f for f in files if f.filename]
+
+    if not uploaded:
+        return jsonify({'error': 'No valid files selected'}), 400
+
+    dfs = []
+    processed_files = []
+    errors = []
+    total_songs = 0
+
+    for file in uploaded:
+        if allowed_file(file.filename):
+            try:
+                content = file.read().decode('utf-8')
+                json_data = json.loads(content)
+
+                if isinstance(json_data, list):
+                    total_songs += len(json_data)
+                    df = pd.DataFrame(json_data)
+                else:
+                    total_songs += 1
+                    df = pd.DataFrame([json_data])
+
+                df['source_file'] = file.filename
+                dfs.append(df)
+
+                processed_files.append({
+                    'filename': file.filename,
+                    'records': df.shape[0],
+                    'song_count': len(df),
+                    'columns': list(df.columns)
+                })
+
+                print(f"Processed {file.filename} -> {df.shape[0]} rows")
+
+            except Exception as e:
+                errors.append(str(e))
+        else:
+            errors.append(f"Invalid file type: {file.filename}")
+
+    if not dfs:
+        return jsonify({'error': 'No valid JSON data processed', 'errors': errors}), 400
+
+    combined_df = pd.concat(dfs, ignore_index=True)
+    combined_df['ts'] = pd.to_datetime(combined_df['ts'], errors='coerce')
 
         # Perform analysis ONCE
         analysis_results = analyze_spotify_data(combined_df)
@@ -519,24 +472,10 @@ def get_artists_TOD_analysis():
 
     if not current_combined or current_combined['combined_df'] is None:
         return jsonify({'error': 'No analysis data available. Please analyze files first.'}), 400
-    
     try:
-        print("Debug: Starting time of day analysis...")
-        
-        # Check if timestamp column exists
-        if 'ts' not in current_combined['combined_df'].columns:
-            return jsonify({'error': 'Timestamp data not available in the analyzed files'}), 400
-        
         time_analysis = get_time_of_day_analysis(current_combined['combined_df'])
-        print(f"Debug: Time analysis completed successfully")
-        
-        # Use the safe JSON converter
-        return safe_jsonify(time_analysis)
-    
+        return jsonify(time_analysis)
     except Exception as e:
-        print(f"Error in time-of-day analysis: {str(e)}")
-        import traceback
-        traceback.print_exc()
         return jsonify({'error': f'Error analyzing time patterns: {str(e)}'}), 500
     
 @app.route('/api/artists/stream-buildup', methods=['POST'])
@@ -586,68 +525,72 @@ def get_top_artists():
 def get_top_albums():
     global current_combined
 
-    if not current_combined or current_combined['combined_df'] is None:
-        return jsonify([])  # No data yet
+    if not current_combined:
+        return jsonify([])
 
     df = current_combined['combined_df'].copy()
-    df['ts'] = pd.to_datetime(df['ts'])
 
-    # Filters
     start = request.args.get('start', '')
     end = request.args.get('end', '')
-    time_filter = request.args.get('time', 'all')
+    timef = request.args.get('time', 'all')
     season = request.args.get('season', 'all')
 
-    # Date filters
+    df['ts'] = pd.to_datetime(df['ts'], errors='coerce', utc=True)
+    df['ts'] = df['ts'].dt.tz_convert(None)   # removes timezone
+
+
+    # ----- DATE FILTER -----
     if start:
         df = df[df['ts'] >= pd.to_datetime(start)]
     if end:
         df = df[df['ts'] <= pd.to_datetime(end)]
 
-    # Time-of-day filter
-    if time_filter != 'all':
-        hour = df['ts'].dt.hour
-        if time_filter == 'morning':
-            df = df[(hour >= 6) & (hour < 12)]
-        elif time_filter == 'afternoon':
-            df = df[(hour >= 12) & (hour < 17)]
-        elif time_filter == 'evening':
-            df = df[(hour >= 17) & (hour < 21)]
-        elif time_filter == 'night':
-            df = df[(hour >= 21) | (hour < 6)]
+    # ----- TIME FILTER -----
+    hour = df['ts'].dt.hour
+    if timef == 'morning':
+        df = df[(hour >= 6) & (hour < 12)]
+    elif timef == 'afternoon':
+        df = df[(hour >= 12) & (hour < 17)]
+    elif timef == 'evening':
+        df = df[(hour >= 17) & (hour < 21)]
+    elif timef == 'night':
+        df = df[(hour >= 21) | (hour < 6)]
 
-    # Season filter
+    # ----- SEASON FILTER -----
     month = df['ts'].dt.month
     if season == 'spring':
-        df = df[month.isin([3,4,5])]
+        df = df[month.isin([3, 4, 5])]
     elif season == 'summer':
-        df = df[month.isin([6,7,8])]
+        df = df[month.isin([6, 7, 8])]
     elif season == 'fall':
-        df = df[month.isin([9,10,11])]
+        df = df[month.isin([9, 10, 11])]
     elif season == 'winter':
-        df = df[month.isin([12,1,2])]
+        df = df[month.isin([12, 1, 2])]
 
-    # Album aggregation
+    # ----- ALBUM AGGREGATION -----
     if 'master_metadata_album_album_name' not in df.columns:
         return jsonify([])
 
-    album_counts = df.groupby([
-        'master_metadata_album_album_name',
-        'master_metadata_album_artist_name'
-    ]).size().reset_index(name='plays')
+    grouped = df.groupby(
+        ['master_metadata_album_album_name', 'master_metadata_album_artist_name']
+    ).size().reset_index(name='plays')
 
-    album_counts = album_counts.sort_values('plays', ascending=False)
+    grouped = grouped.sort_values('plays', ascending=False)
 
-    results = []
-    for _, row in album_counts.iterrows():
-        results.append({
+    return jsonify([
+        {
             'title': row['master_metadata_album_album_name'],
             'artist': row['master_metadata_album_artist_name'],
             'plays': int(row['plays']),
-            'cover': ''  # optional placeholder
-        })
+            'cover': ''  # Placeholder
+        }
+        for _, row in grouped.iterrows()
+    ])
 
-    return jsonify(results)
+
+# ======================================
+# Run Backend (Port 5001)
+# ======================================
 
 @app.route('/api/artists/available-artists', methods=['GET'])
 def get_available_artists():
@@ -739,4 +682,4 @@ def get_analysis_status():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5173)
+    app.run(debug=True, port=5001)
