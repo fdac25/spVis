@@ -47,7 +47,7 @@
 .analysis-results {
   margin-top: 30px;
   padding: 20px;
-  background: #f8f9fa;
+  /*background: #f8f9fa;*/
   border-radius: 8px;
 }
 
@@ -241,61 +241,4 @@
 .analyze-button:disabled {
   background: #ccc;
   cursor: not-allowed;
-}
-
-.artist-buildup-results {
-  margin-top: 1.5rem;
-  padding: 1rem;
-  background: #f8f9fa;
-  border-radius: 6px;
-}
-
-.buildup-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  margin: 1rem 0;
-}
-
-.loading {
-  text-align: center;
-  padding: 2rem;
-  font-size: 1.2rem;
-}
-
-.no-data {
-  text-align: center;
-  padding: 2rem;
-}
-
-.error {
-  color: #dc3545;
-  background: #f8d7da;
-  padding: 0.5rem;
-  border-radius: 4px;
-  border: 1px solid #f5c6cb;
-}
-
-@media (max-width: 768px) {
-  .visualization-grid,
-  .artists-lists {
-    grid-template-columns: 1fr;
-  }
-  
-  .artist-search {
-    flex-direction: column;
-  }
-}
-
-.artists-page {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-.visualization-section,
-.time-analysis-section,
-.top-artists-section,
-.individual-artist-section {
-  margin-bottom: 2rem;
 }

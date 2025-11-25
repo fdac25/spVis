@@ -1,4 +1,4 @@
-import time
+import numpy as np
 from flask import Flask, request, jsonify
 import os
 import json
@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import io
 import base64
 from werkzeug.utils import secure_filename
+from datetime import datetime, date
 from flask_cors import CORS
 
 
@@ -117,41 +118,116 @@ def get_time_of_day_analysis(combined_df, start_date=None, end_date=None):
     """
     Get detailed time of day analysis for a specific date range
     """
-    if 'ts' not in combined_df.columns:
-        return {}
+    try:
+        if 'ts' not in combined_df.columns:
+            return {'error': 'Timestamp data not available'}
+        
+        df = combined_df.copy()
+        
+        # Convert to datetime and handle errors
+        df['ts'] = pd.to_datetime(df['ts'], errors='coerce')
+        
+        # Check for invalid timestamps
+        invalid_timestamps = df['ts'].isna().sum()
+        if invalid_timestamps > 0:
+            df = df.dropna(subset=['ts'])
+        
+        if len(df) == 0:
+            return {'error': 'No valid timestamp data available'}
+        
+        # Apply date filter if provided
+        if start_date:
+            try:
+                start_date = pd.to_datetime(start_date)
+                df = df[df['ts'] >= start_date]
+            except Exception:
+                pass
+        
+        if end_date:
+            try:
+                end_date = pd.to_datetime(end_date)
+                df = df[df['ts'] <= end_date]
+            except Exception:
+                pass
+        
+        # Hourly analysis - ensure we use native Python types
+        df['hour'] = df['ts'].dt.hour
+        hourly_counts = df['hour'].value_counts().sort_index()
+        
+        # Fill missing hours with 0 and convert to native types
+        all_hours = pd.Series(0, index=range(24))
+        hourly_counts = hourly_counts.reindex(all_hours.index, fill_value=0)
+        
+        # Convert Series to native Python dict with native types
+        hourly_distribution = {}
+        for hour, count in hourly_counts.items():
+            hourly_distribution[int(hour)] = int(count)
+        
+        # Calculate time period summaries with native types
+        time_periods = {
+            'early_morning_0_5': int(hourly_counts.loc[0:5].sum()),
+            'morning_6_11': int(hourly_counts.loc[6:11].sum()),
+            'afternoon_12_17': int(hourly_counts.loc[12:17].sum()),
+            'evening_18_21': int(hourly_counts.loc[18:21].sum()),
+            'late_night_22_23': int(hourly_counts.loc[22:23].sum())
+        }
+        
+        # Find peak hour with native types
+        peak_hour_idx = hourly_counts.idxmax()
+        peak_hour_count = hourly_counts.max()
+        
+        result = {
+            'hourly_distribution': hourly_distribution,
+            'peak_hour': int(peak_hour_idx),
+            'peak_hour_count': int(peak_hour_count),
+            'time_of_day_summary': time_periods,
+            'total_streams_in_range': int(len(df))
+        }
+        
+        print(f"Debug: Analysis completed - peak_hour: {result['peak_hour']}")
+        return result
+        
+    except Exception as e:
+        print(f"Error in get_time_of_day_analysis: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        return {'error': f'Analysis failed: {str(e)}'}
     
-    df = combined_df.copy()
-    df['ts'] = pd.to_datetime(df['ts'])
-    
-    # Apply date filter if provided
-    if start_date:
-        start_date = pd.to_datetime(start_date)
-        df = df[df['ts'] >= start_date]
-    if end_date:
-        end_date = pd.to_datetime(end_date)
-        df = df[df['ts'] <= end_date]
-    
-    # Hourly analysis
-    df['hour'] = df['ts'].dt.hour
-    hourly_counts = df['hour'].value_counts().sort_index()
-    
-    # Fill missing hours with 0
-    all_hours = pd.Series(0, index=range(24))
-    hourly_counts = hourly_counts.reindex(all_hours.index, fill_value=0)
-    
-    return {
-        'hourly_distribution': hourly_counts.to_dict(),
-        'peak_hour': hourly_counts.idxmax(),
-        'peak_hour_count': hourly_counts.max(),
-        'time_of_day_summary': {
-            'early_morning_0_5': hourly_counts.loc[0:5].sum(),
-            'morning_6_11': hourly_counts.loc[6:11].sum(),
-            'afternoon_12_17': hourly_counts.loc[12:17].sum(),
-            'evening_18_21': hourly_counts.loc[18:21].sum(),
-            'late_night_22_23': hourly_counts.loc[22:23].sum()
-        },
-        'total_streams_in_range': len(df)
-    }
+def convert_to_serializable(obj):
+    """
+    Recursively convert pandas/numpy types to native Python types for JSON serialization
+    """
+    if obj is None:
+        return None
+    elif isinstance(obj, (np.integer, np.int8, np.int16, np.int32, np.int64)):
+        return int(obj)
+    elif isinstance(obj, (np.floating, np.float16, np.float32, np.float64)):
+        return float(obj)
+    elif isinstance(obj, (np.bool_, np.bool)):
+        return bool(obj)
+    elif isinstance(obj, np.ndarray):
+        return obj.tolist()
+    elif isinstance(obj, pd.Series):
+        return obj.tolist()
+    elif isinstance(obj, pd.Timestamp):
+        return obj.isoformat()
+    elif isinstance(obj, (datetime, date)):
+        return obj.isoformat()
+    elif isinstance(obj, dict):
+        return {key: convert_to_serializable(value) for key, value in obj.items()}
+    elif isinstance(obj, (list, tuple)):
+        return [convert_to_serializable(item) for item in obj]
+    elif hasattr(obj, 'dtype') and hasattr(obj, 'tolist'):  # Other pandas/numpy types
+        return obj.tolist()
+    else:
+        return obj
+
+def safe_jsonify(data):
+    """
+    Safely convert data to JSON, handling all pandas/numpy types
+    """
+    serializable_data = convert_to_serializable(data)
+    return jsonify(serializable_data)
 
 def create_spotify_visualizations(combined_df, analysis_results):
     images = {}
@@ -443,10 +519,24 @@ def get_artists_TOD_analysis():
 
     if not current_combined or current_combined['combined_df'] is None:
         return jsonify({'error': 'No analysis data available. Please analyze files first.'}), 400
+    
     try:
+        print("Debug: Starting time of day analysis...")
+        
+        # Check if timestamp column exists
+        if 'ts' not in current_combined['combined_df'].columns:
+            return jsonify({'error': 'Timestamp data not available in the analyzed files'}), 400
+        
         time_analysis = get_time_of_day_analysis(current_combined['combined_df'])
-        return jsonify(time_analysis)
+        print(f"Debug: Time analysis completed successfully")
+        
+        # Use the safe JSON converter
+        return safe_jsonify(time_analysis)
+    
     except Exception as e:
+        print(f"Error in time-of-day analysis: {str(e)}")
+        import traceback
+        traceback.print_exc()
         return jsonify({'error': f'Error analyzing time patterns: {str(e)}'}), 500
     
 @app.route('/api/artists/stream-buildup', methods=['POST'])
